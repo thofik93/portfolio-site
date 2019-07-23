@@ -1,0 +1,32 @@
+.page--portfolio {
+	text-align: center;
+	.list-category {
+		display: inline-block;
+		> li {
+			display: inline-block;
+			margin-right: 20px;
+			font-size: 13px;
+			font-family: $opensans-semibold;
+			line-height: 22px;
+			&.active {
+				color: #cd5353;
+			}
+			&:hover {
+				color: #cd5353;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			> a {
+
+			}
+		}
+	}
+
+	.portfolio-card {
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		height: 187px;
+	}
+}

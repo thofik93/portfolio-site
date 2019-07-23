@@ -1,0 +1,56 @@
+.page--about {
+	.about-me {
+		columns: 343px 2;
+		> p {
+			line-height: 22px;
+			color: #555;
+		}
+	}
+
+	.fullname {
+		font: 28px/28px $opensans-extrabold;
+		margin-bottom: 10px;
+	}
+
+	.list-skills__name {
+		font: 13px/15px $opensans-semibold;
+		color: #666;
+		margin-bottom: 8px;
+		text-transform: uppercase;
+	}
+
+	.progress {
+		border: 1px solid #cd5353;
+		height: 16px;
+		border-radius: 50px;
+	}
+
+	.progress-bar {
+		background-color: #cd5353;
+		height: 14px;
+		border-radius: 50px;
+		color: #FFFFFF;
+		text-align: center;
+		font-size: 11px;
+		letter-spacing: 0.4px;
+	}
+
+	.profession {
+		font: 22px/24px $opensans-light;
+		color: #777;
+		margin-bottom: 30px;
+	}
+
+	.skill {
+		margin-bottom: 30px;
+	}
+
+	.skill-set-name {
+		font: 16px/18px $opensans-bold;
+		margin-bottom: 20px;
+	}
+
+	.text_size-big {
+		font-size: 45px;
+	}
+}

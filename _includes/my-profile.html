@@ -1,0 +1,19 @@
+<div class="my-profile">
+  <img src="/assets/images/global/thofik-wiranata.png" class="my-profile__avatar img-responsive" />
+  <ul class="my-profile__navigation">
+    {% for item in site.data.navigation %}
+    <li class="my-profile__navigation__link {% if (item.link == page.url) %}active{% endif %}">
+      <i class="{{ item.icon }} my-profile__navigation__icon"></i>
+      <a href="{{ item.link }}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="my-profile__footer"> 
+    <div class="my-profile__social-media">
+      <a class="my-profile__social-media__platform icon-github" href="https://github.com/thofik93" target="_blank"></a>
+      <a class="my-profile__social-media__platform icon-linkedin" href="https://www.linkedin.com/in/thofik-wiranata-ba7340126/" target="_blank"></a>
+       <a class="my-profile__social-media__platform icon-instagram" href="https://www.linkedin.com/in/thofik-wiranata-ba7340126/" target="_blank"></a>
+    </div>
+    <p class="my-profile__copyright">© 2019 Thofik Wiranata Website.</p>
+  </div>
+</div>

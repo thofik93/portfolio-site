@@ -1,0 +1,14 @@
+- name: Jekyll
+  value: 65
+- name: GulpJS
+  value: 70
+- name: NPM
+  value: 70
+- name: Sass
+  value: 90
+- name: Photoshop
+  value: 70
+- name: Sketch
+  value: 70
+
+

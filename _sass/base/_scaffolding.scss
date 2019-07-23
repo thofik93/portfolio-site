@@ -1,0 +1,42 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #EFEFEF;
+	color: #333;
+	font-family: $opensans-regular;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}	
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

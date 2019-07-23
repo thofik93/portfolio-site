@@ -1,0 +1,23 @@
+.progress {
+  height: 15px;
+  border-radius: 0;
+  margin-bottom: 15px;
+  box-shadow: none;
+}
+
+.progress .progress-bar {
+  background-color: #212121;
+}
+
+.progress .progress-bar_theme-maroon {
+  background-color: #d81143;
+}
+.progress .progress-bar_theme-sky {
+  background-color: #87b3da;
+}
+.progress .progress-bar_theme-forest {
+  background-color: #5daf61;
+}
+.progress .progress-bar_theme-orange {
+  background-color: #ff8f35;
+}

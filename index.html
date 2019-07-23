@@ -1,0 +1,290 @@
+---
+layout: default
+title: "Thofik Wiranata - The Best Front End Engineer in Indonesia - Love Doing Software"
+---
+<div class="page--default page--about">
+
+	<div class="section">	
+		<div class="head">
+			<h1 class="head__title">WHO AM I</h1>
+			<div class="head__divider">
+				<div class="zigzag large clearfix " data-svg-drawing="yes">
+					<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+					<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 " style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<h1 class="fullname">THOFIK WIRANATA</h1>
+			<h2 class="profession">Front-end Engineer at Sociolla</h2>
+
+			<div class="about-me">
+				<p><span class="text_size-big">Hi</span>, I'm a Front-end Engineer with 3+ years of professional experience, based in Jakarta. I develop compelling designs that spring to life using transition and animations that suit my clients, using the most sophisticated technologies available today for fully interactive and responsive websites and apps. I love doing front end code from scratch, made plugin and javascript library, because it's not just fun but teach me to deep understanding about code. I can write back-end code too, with a good understanding of the backend code and front end code I can make anything possible.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">	
+		<div class="head">
+			<h1 class="head__title">PROFESSIONAL SKILLS</h1>
+			<div class="head__divider">
+				<div class="zigzag large clearfix " data-svg-drawing="yes">
+					<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+					<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 " style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<div class="skill">	
+				<h3 class="skill-set-name">Front-end Skills</h3>
+				<ul class="list-skills">
+					{% for skill in site.data.frontend_skills %}
+					<li> 
+						<h4 class="list-skills__name">{{ skill.name }}</h4>
+						<div class="progress">
+	            <div class="progress-bar" role="progressbar" aria-valuenow="90"
+	              aria-valuemin="0" aria-valuemax="100" style="width: {{ skill.value }}%">
+
+	              {% if skill.value > 85 %}
+	              	Master
+	              {% elsif skill.value > 70 and skill.value <= 85 %}
+	              	Advanced
+	              {% elsif skill.value > 50 and skill.value <= 70 %}
+	              	Intermediate
+	              {% else %}
+	              	Beginner
+	              {% endif %}
+	            </div>
+	          </div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<div class="skill">	
+				<h3 class="skill-set-name">Front-end Tools</h3>
+				<ul class="list-skills">
+					{% for skill in site.data.frontend_tools %}
+					<li> 
+						<h4 class="list-skills__name">{{ skill.name }}</h4>
+						<div class="progress">
+	            <div class="progress-bar" role="progressbar" aria-valuenow="90"
+	              aria-valuemin="0" aria-valuemax="100" style="width: {{ skill.value }}%">
+
+	              {% if skill.value > 85 %}
+	              	Master
+	              {% elsif skill.value > 70 and skill.value <= 85 %}
+	              	Advanced
+	              {% elsif skill.value > 50 and skill.value <= 70 %}
+	              	Intermediate
+	              {% else %}
+	              	Beginner
+	              {% endif %}
+	            </div>
+	          </div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<div class="skill">	
+				<h3 class="skill-set-name">Back-end Skills</h3>
+				<ul class="list-skills">
+					{% for skill in site.data.backend_skills %}
+					<li> 
+						<h4 class="list-skills__name">{{ skill.name }}</h4>
+						<div class="progress">
+	            <div class="progress-bar" role="progressbar" aria-valuenow="90"
+	              aria-valuemin="0" aria-valuemax="100" style="width: {{ skill.value }}%">
+
+	              {% if skill.value > 85 %}
+	              	Master
+	              {% elsif skill.value > 70 and skill.value <= 85 %}
+	              	Advanced
+	              {% elsif skill.value > 50 and skill.value <= 70 %}
+	              	Intermediate
+	              {% else %}
+	              	Beginner
+	              {% endif %}
+	            </div>
+	          </div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<div class="skill">	
+				<h3 class="skill-set-name">Back-end Tools</h3>
+				<ul class="list-skills">
+					{% for skill in site.data.backend_tools %}
+					<li> 
+						<h4 class="list-skills__name">{{ skill.name }}</h4>
+						<div class="progress">
+	            <div class="progress-bar" role="progressbar" aria-valuenow="90"
+	              aria-valuemin="0" aria-valuemax="100" style="width: {{ skill.value }}%">
+
+	              {% if skill.value > 85 %}
+	              	Master
+	              {% elsif skill.value > 70 and skill.value <= 85 %}
+	              	Advanced
+	              {% elsif skill.value > 50 and skill.value <= 70 %}
+	              	Intermediate
+	              {% else %}
+	              	Beginner
+	              {% endif %}
+	            </div>
+	          </div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+
+			<div class="skill">	
+				<h3 class="skill-set-name">Another Programming Skills</h3>
+				<ul class="list-skills">
+					{% for skill in site.data.another_programming_skills %}
+					<li> 
+						<h4 class="list-skills__name">{{ skill.name }}</h4>
+						<div class="progress">
+	            <div class="progress-bar" role="progressbar" aria-valuenow="90"
+	              aria-valuemin="0" aria-valuemax="100" style="width: {{ skill.value }}%">
+
+	              {% if skill.value > 85 %}
+	              	Master
+	              {% elsif skill.value > 70 and skill.value <= 85 %}
+	              	Advanced
+	              {% elsif skill.value > 50 and skill.value <= 70 %}
+	              	Intermediate
+	              {% else %}
+	              	Beginner
+	              {% endif %}
+	            </div>
+	          </div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">	
+		<div class="head">
+			<h1 class="head__title">EXPERIENCE</h1>
+			<div class="head__divider">
+				<div class="zigzag large clearfix " data-svg-drawing="yes">
+					<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+					<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 " style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<div class="timeline timeline_experience">
+				<div class="timeline__row">	
+					<div class="timeline__content">	
+						{% for experience in site.data.experiences %}
+							<div class="timeline__step">
+								<div class="timeline__info">
+									<h2 class="timeline__heading">{{ experience.title }}</h2>
+									<p class="timeline__date"><i class="icon-calendar"></i> {{ experience.date }}</p>
+									<p class="timeline__paraf">{{ experience.description }}</p>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">	
+		<div class="head">
+			<h1 class="head__title">EDUCATION</h1>
+			<div class="head__divider">
+				<div class="zigzag large clearfix " data-svg-drawing="yes">
+					<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+					<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 " style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<div class="timeline timeline_academic">
+				<div class="timeline__row">	
+					<div class="timeline__content">	
+						{% for education in site.data.educations %}
+							<div class="timeline__step">
+								<div class="timeline__info">
+									<h2 class="timeline__heading">{{ education.title }}</h2>
+									<p class="timeline__date"><i class="icon-calendar"></i> {{ education.date }}</p>
+									<p class="timeline__paraf">{{ education.description }}</p>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section">	
+		<div class="head">
+			<h1 class="head__title">NON-FORMAL EDUCATION</h1>
+			<div class="head__divider">
+				<div class="zigzag large clearfix " data-svg-drawing="yes">
+					<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+					<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 " style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<div class="timeline timeline_academic">
+				<div class="timeline__row">	
+					<div class="timeline__content">	
+						{% for education in site.data.nonformal_educations %}
+							<div class="timeline__step">
+								<div class="timeline__info">
+									<h2 class="timeline__heading">{{ education.title }}</h2>
+									<p class="timeline__date"><i class="icon-calendar"></i> {{ education.date }}</p>
+									<p class="timeline__paraf">{{ education.description }}</p>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section section--footer">	
+		<div class="head">
+			<div class="head__divider">
+				<div class="zigzag large clearfix " data-svg-drawing="yes">
+					<svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+					<path d="M1.357,12.26 10.807,2.81 20.328,12.332
+						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 " style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+
+		<div class="body">
+			<a href="" class="btn-download-cv"><i class="icon-download-cloud"></i> DOWNLOAD MY CV</a>
+		</div>
+	</div>
+
+
+</div>

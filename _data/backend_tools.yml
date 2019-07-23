@@ -1,0 +1,6 @@
+- name: HeidiSQL
+  value: 70
+- name: Robo 3T
+  value: 40
+- name: Composer
+  value: 65

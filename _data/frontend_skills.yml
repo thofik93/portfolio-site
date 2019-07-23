@@ -1,0 +1,16 @@
+- name: Javascript
+  value: 95
+- name: jQuery
+  value: 95
+- name: VueJS
+  value: 90
+- name: ReactJS
+  value: 60
+- name: AngluarJS
+  value: 50
+- name: CSS
+  value: 85
+- name: Android
+  value: 14
+- name: PhaserJS
+  value: 70
