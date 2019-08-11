@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thofik Wiranata - The Best Front End Engineer in Indonesia - Love Doing Software</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fontello/css/fontello.css">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Thofik Wiranata - The Best Front End Engineer in Indonesia - Love Doing Software</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Thofik Wiranata - The Best Front End Engineer in Indonesia - Love Doing Software" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/pimple-pop" />
+<meta property="og:url" content="http://localhost:4000/pimple-pop" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/pimple-pop","headline":"Thofik Wiranata - The Best Front End Engineer in Indonesia - Love Doing Software","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+
+    <div id="app">	
+	<div class="page--pimple-pop game">
+		<div class="header">
+			<div class="wrapper">	
+				<div class="progress-wrapper">	
+					<div class="progress">
+						<div class="progress-bar" :style="{ width: `${game.state.persenProgress}%` }"></div>
+					</div>
+				</div>
+				<a href="" class="close-button" @click.prevent="forceQuit()"><img src="/assets/images/pimple-pop/close-button@2x.png" width="86" /></a>
+			</div>
+			<span class="header__timer" v-html="'00:' + game.time"></span>
+		</div>
+
+		<div class="game-arena">
+			
+			<div class="score">
+				<span class="score__text">SCORE</span>
+				<span class="score__point" v-html="game.zit"></span>
+			</div>
+
+			<div class="game-arena__actor">
+				<div class="game-arena__grid">
+					<div class="col-pimple" :class="{[key]: true}" v-for="(item, key) in game.area">
+						<a href="" class="actor"
+							:class="{
+								'unused-col': !item.isShow,
+								[game.area[key].actor]: item.isShow}"
+							@click.prevent="getActor($event,{index: key, actor: game.area[key].actor, show: item.isShow, point: item.point})"
+						>
+						</a>
+						<transition name="pointfade">
+							<span class="pimple-point" v-show="item.zitShow"></span>
+						</transition>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay" v-show="game.state.isReadyToPlay === false"><span class="text" v-html="game.countdown"></span></div>
+	</div>
+</div>
+
+    <script type="text/javascript" src="/assets/js/pimple-pop-config.js"></script>
+    <script type="text/javascript" src="/assets/js/random-js.umd.js"></script>
+    <script type="text/javascript" src="/assets/js/sociolla.lib-min.js"></script>
+    <script type="text/javascript" src="/assets/js/vue.js"></script>
+    <script src="/assets/js/pimple-pop.js"></script>
+  </body>
+</html>

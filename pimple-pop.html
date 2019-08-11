@@ -1,0 +1,47 @@
+---
+layout: game
+title: "Thofik Wiranata - The Best Front End Engineer in Indonesia - Love Doing Software"
+permalink: "/pimple-pop"
+---
+
+<div id="app">	
+	<div class="page--pimple-pop game">
+		<div class="header">
+			<div class="wrapper">	
+				<div class="progress-wrapper">	
+					<div class="progress">
+						<div class="progress-bar" :style="{ width: `${game.state.persenProgress}%` }"></div>
+					</div>
+				</div>
+				<a href="" class="close-button" @click.prevent="forceQuit()"><img src="/assets/images/pimple-pop/close-button@2x.png" width="86" /></a>
+			</div>
+			<span class="header__timer" v-html="'00:' + game.time"></span>
+		</div>
+
+		<div class="game-arena">
+			
+			<div class="score">
+				<span class="score__text">SCORE</span>
+				<span class="score__point" v-html="game.zit"></span>
+			</div>
+
+			<div class="game-arena__actor">
+				<div class="game-arena__grid">
+					<div class="col-pimple" :class="{[key]: true}" v-for="(item, key) in game.area">
+						<a href="" class="actor"
+							:class="{
+								'unused-col': !item.isShow,
+								[game.area[key].actor]: item.isShow}"
+							@click.prevent="getActor($event,{index: key, actor: game.area[key].actor, show: item.isShow, point: item.point})"
+						>
+						</a>
+						<transition name="pointfade">
+							<span class="pimple-point" v-show="item.zitShow"></span>
+						</transition>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="overlay" v-show="game.state.isReadyToPlay === false"><span class="text" v-html="game.countdown"></span></div>
+	</div>
+</div>

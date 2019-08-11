@@ -1,0 +1,52 @@
+- project_name: SOCO
+  category: website 
+  link: https://www.soco.id/
+  background_image: /assets/images/portfolio/soco.png
+- project_name: BEAUTY JOURNAL
+  category: website
+  link: https://journal.sociolla.com/
+  background_image: /assets/images/portfolio/beauty-journal.png
+- project_name: REVIEW
+  category: website
+  link: https://review.soco.id/
+  background_image: /assets/images/portfolio/review.png
+- project_name: MIDPLAZA BUILDING
+  category: website
+  link: https://midplazabuilding.com/
+  background_image: /assets/images/portfolio/midplaza-building.png
+- project_name: PROGRESS GROUP
+  category: website
+  link: https://paradise.co.id/
+  background_image: /assets/images/portfolio/progress-group.png
+- project_name: PLAZA RESIDENCES
+  category: website
+  link: https://plazaresidences.co.id/
+  background_image: /assets/images/portfolio/plaza-residence.png
+- project_name: AYANA SHOP
+  category: website
+  link: https://shop.ayana.com/
+  background_image: /assets/images/portfolio/ayana-shop.png
+- project_name: SCROLL BALANCED
+  category: plugin
+  link: https://thofik93.github.io/scroll-balanced/
+  background_image: /assets/images/portfolio/plugin.png
+- project_name: MONTASE TABS
+  category: plugin
+  link: https://thofik93.github.io/montase-tabs/
+  background_image: /assets/images/portfolio/plugin.png
+- project_name: MONTASE CHECKED
+  category: plugin
+  link: https://thofik93.github.io/montase-checked/
+  background_image: /assets/images/portfolio/plugin.png
+- project_name: SOCIOLLA LIBRARY
+  category: plugin
+  link: https://github.com/thofik93/sociolla-lib
+  background_image: /assets/images/portfolio/plugin.png
+- project_name: PIMPLE POP
+  category: game
+  link: /pimple-pop
+  background_image: /assets/images/portfolio/pimple-pop.png
+- project_name: OBSTACLE RUN
+  category: game
+  link: https://github.com
+  background_image: /assets/images/portfolio/plugin.png

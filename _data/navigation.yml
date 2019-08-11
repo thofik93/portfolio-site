@@ -4,9 +4,6 @@
 - name: PORTFOLIO
   link: /portfolio
   icon: icon-camera
-- name: BLOG
-  link: /blog
-  icon: icon-pencil
 - name: CONTACT
   link: /contact
   icon: icon-call

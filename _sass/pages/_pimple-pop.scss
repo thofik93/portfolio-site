@@ -1,0 +1,676 @@
+.progress {
+	overflow: hidden;
+	background-color: #D8D8D8;
+	border-radius: 9px;
+	height: 18px;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.progress-bar {
+	float: left;
+	height: 100%;
+	background-color: #F384A7;
+	transition: width .6s ease;
+	border-radius: 9px;
+}
+
+
+.page--pimple-pop {
+	min-height: 1920px;
+	text-align: center;
+
+	.wrapper {
+		margin-top: 0;
+	}
+
+	.container-pimple {
+		width: 861px;
+		margin: 0 auto;
+	}
+
+	&.finish {position:relative;
+		.close-button {position:absolute;z-index:2;top:50px;right:50px;}
+	}
+
+	&.landing {
+		position: relative;
+		padding: 80px 0 0 0;
+		@include img-cover(100%, auto, '/assets/images/pimple-pop/landing-bg@2x.png');
+
+		.close-button {
+			position: absolute;
+			top: 50px;
+			right: 50px;
+			z-index: 11;
+			height: 100px;
+		}
+
+		.logo-pimple-pop {
+			width: 600px;
+			margin-bottom: 60px;
+		}
+
+		.logo-soco {
+			height: 70px;
+			margin-bottom: 50px;
+		}
+
+		.play {
+			width: 280px;
+		}
+
+		.text-copywriting {
+			font: 45px/58px $opensans-regular;
+			letter-spacing: 0;
+			color: #000;
+			margin: 0 0 100px 0;
+		}
+
+		.text-greeting {
+			font: 60px/83px $opensans-bold;
+			letter-spacing: 0;
+			color: #000;
+			margin-bottom: 150px;
+		}
+
+		.text-heading {
+			font: 38px/53px $opensans-bold;
+			letter-spacing: 3.8px;
+			color: #000;
+			margin: 0 0 60px 0;
+			text-transform: uppercase;
+			&.last {
+				margin-bottom: 43px;
+			}
+		}
+	}
+}
+
+.page--pimple-pop {
+	&.how-to-play {
+		padding: 60px 0 0 0;
+		position: relative;
+		@include img-cover(100%, auto, '/assets/images/pimple-pop/bg-how-to-play@2x.png');
+
+		.acne-name {
+			font: 30px/42px $opensans-bold;
+			letter-spacing: 0;
+			color: #000;
+			margin: 0;
+		}
+
+		.acne-point {
+			font: 30px/32px $opensans-bold;
+			letter-spacing: 0.83px;
+			color: #B22655;
+			margin: 0;
+		}
+
+		.acne-text {
+			font: 25px/35px $opensans-regular;
+			letter-spacing: 0;
+			color: #000;
+			margin: 0;
+		}
+
+		.acne-wrapper {
+			position: absolute;
+			z-index: 10;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			@include img-cover(322px, 326px, '/assets/images/pimple-pop/circle-acne-scar@2x.png');
+		}
+
+		.acne-wrapper--mystery {
+			top: 728px;
+			right: 29px;
+			background-image: url('/assets/images/pimple-pop/circle-mystery-acne@2x.png');
+		}
+
+		.acne-wrapper--red {
+			top: 749px;
+			left: 37px;
+			width: 321px;
+			height: 319px;
+			background-image: url('/assets/images/pimple-pop/circle-red-acne@2x.png');
+		}
+
+		.acne-wrapper--scar {
+			top: 0;
+			left: 358px;
+			.acne-img {
+				margin-bottom: 4px;	
+			}
+		}
+
+		.acne-wrapper--small {
+			top: 255px;
+			left: 26px;
+			.acne-img {
+				margin-bottom: 4px;	
+			}
+		}
+
+		.acne-wrapper--whitehead {
+			top: 255px;
+			right: 25px;
+			background-image: url('/assets/images/pimple-pop/circle-whitehead@2x.png');
+			.acne-img {
+				margin-bottom: 2px;	
+			}
+		}
+
+		.box-how-to-play {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 10;
+			height: 739px;
+			width: 100%;
+			padding: 78px 0 92px;
+			text-align: center;
+			background-color: #F8C3C4;
+		}
+
+		.button-play-now {
+			display: flex;
+			height: 98px;
+			width: 685px;
+			margin: 0 auto 80px;
+			background-color: #D33575;
+			color: #FFF;
+			border: 10px solid #B22655;
+			font: 32px/44px $opensans-bold;
+			letter-spacing: 3.2px;
+			text-transform: uppercase;
+			border-radius: 49px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container-pimple {
+			width: 1035px;
+			position: relative;
+		}
+
+		.heading {
+			font: 50px/28px $opensans-bold;
+			letter-spacing: 3.57px;
+			color: #B22655;
+			margin: 0 0 50px 0;
+		}
+
+		.list-style {
+			@include img-cover(50px, 50px, "/assets/images/pimple-pop/ordered-list-bg.png");
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			left: -65px;
+			z-index: 9;
+			font: 30px/42px $opensans-bold;
+			letter-spacing: 0;
+			color: #FFFFFF;
+		}
+
+		.play-steps {
+			margin: 0 auto;
+			padding: 0;
+			width: 855px;
+			text-align: left;
+			> li {
+				font: 28px/37px $opensans-regular;
+				letter-spacing: 0;
+				color: #181818;
+				margin-bottom: 30px;
+				position: relative;
+			}
+		}
+
+		.play-steps__bolder {
+			font-family: $opensans-bold;
+		}
+
+		.close-button {position:absolute;z-index:2;top:50px;right:50px;}
+	}
+}
+
+.page--pimple-pop {
+	&.game {
+		.actor {
+			display: block;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			opacity: 0;
+			transition: opacity .3s ease;
+		}
+
+		.actor--small { // A
+			opacity: 1;
+			background-image: url('/assets/images/pimple-pop/actor-small@2x.png');
+			width: 64px;
+			height: 65px;
+		}
+
+		.actor--red {
+			opacity: 1;
+			background-image: url('/assets/images/pimple-pop/actor-red@2x.png');
+			width: 59px;
+			height: 61px;
+		}
+
+		.actor--scar {
+			opacity: 1;
+			background-image: url('/assets/images/pimple-pop/actor-scar@2x.png');
+			width: 72px;
+			height: 75px;
+		}
+
+		.actor--whitehead {
+			opacity: 1;
+			background-image: url('/assets/images/pimple-pop/actor-whitehead@2x.png');
+			width: 56px;
+			height: 53px;
+		}
+
+		.actor--mystery {
+			opacity: 1;
+			background-image: url('/assets/images/pimple-pop/actor-mystery@2x.png');
+			width: 58px;
+			height: 59px;
+		}
+
+		.close-button {
+			margin-left: 15px;
+		}
+
+		.col-pimple {
+			min-height: 1px;
+			width: 20%;
+			float: left;
+			height: 112px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.col-pimple:nth-child(6), .col-pimple:nth-child(7), .col-pimple:nth-child(8), .col-pimple:nth-child(9), .col-pimple:nth-child(10),
+		.col-pimple:nth-child(16), .col-pimple:nth-child(17), .col-pimple:nth-child(18), .col-pimple:nth-child(19), .col-pimple:nth-child(20),
+		.col-pimple:nth-child(26), .col-pimple:nth-child(27), .col-pimple:nth-child(28), .col-pimple:nth-child(29), .col-pimple:nth-child(30) {
+			height: 56px;
+		}
+
+		.game-arena {
+			padding-top: 30px;
+			position: relative;
+			min-height: 1696px;
+			@include img-cover(100%, auto, '/assets/images/pimple-pop/floor@2x.png');
+		}
+
+		.game-arena__actor {
+			@include img-cover(1021px, 1666px, '/assets/images/pimple-pop/woman@2x.png');
+			background-size: cover;
+			margin: 0 auto;
+			position: absolute;
+			top: 30px;
+			left: 0;
+			right: 0;
+			z-index: 1;
+		}
+
+		.game-arena__grid {
+			width: 458px;
+			height: 600px;
+			@include clearfix;
+			margin: 350px auto 0 auto;
+		}
+
+		.header {
+			padding: 43px 49px 18px 49px;
+			background-color: #B22655;
+			color: #FFFFFF;
+			height: 226px;
+		}
+
+		.header__timer {
+			font: 40px/56px $opensans-bold;
+			letter-spacing: 4.44px;
+			margin-top: 15px;
+			display: block;
+		}
+
+		.overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 10001;
+			background-color: #6C4241;
+			background-color: rgba(#000000, .57);
+			color: #FFFFFF;    
+			display: flex;
+	    align-items: center;
+	    justify-content: center;
+			.text {
+				font-size: 306px;
+				letter-spacing: 0;
+				line-height: 426px;
+				font-family: $opensans-bold;
+			}
+		}
+
+		.pimple-point {
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: calc(50% - 30px); 
+			color: #B22655; 
+			font-family: $opensans-bold;
+			font-size: 60px;
+			line-height: 83px;
+			// width: 60px;
+			// height: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			user-select: none;
+		}
+    .pointfade-enter-active, .pointfade-leave-active {
+    	transition: all 1s;
+    }
+    
+    .pointfade-leave-to {
+    	opacity: 0;
+    	transform: translateY(-30px);
+    }
+
+		.progress {
+			height: 34px;
+			background-color: #FFFFFF;
+			border-radius: 17px;
+			width: 100%;
+		}
+
+		.progress-bar {
+			border-radius: 17px;
+			background-color: #F293B1;
+		}
+
+		.progress-wrapper {
+			padding: 26px 42px;
+			height: 86px;
+			width: 100%;
+			background-color: #CC2C62;
+			border-radius: 42px;
+		}
+
+		.score {
+			width: 340px;
+			height: 120px;
+			border-radius: 55px;
+			background-color: #B22655;
+			color: #FFF;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto 0 auto;
+			position: relative;
+			flex-direction: column;
+			z-index: 4;
+		}
+
+		.score__point {
+			font: 50px/50px $opensans-bold;
+			letter-spacing: 0;
+		}
+
+		.score__text {
+			font: 30px/30px $opensans-bold;
+			letter-spacing: 3px;
+			margin-bottom: 11px;
+		}
+
+		.wrapper {
+			display: flex;
+			width: 100%;
+		}
+	}
+}
+
+.page--pimple-pop {
+	&.finish {
+		.box-congrats {
+			background-color: #F7A4A6;
+			height: calc(100vh - 835px);
+			padding-top: 263px;
+		}
+
+		.box-congrats__heading {
+			font: 70px/70px $opensans-bold;
+			letter-spacing: 5.83px;
+			margin: 0 0 60px 0;
+			text-transform: uppercase;
+			color: #FFF;
+		}
+		.failed .box-congrats__heading {font-size:50px;padding:0 75px;}
+
+		.box-congrats__text {
+			font: 38px/53px $opensans-bold;
+			letter-spacing: 3.8px;
+			color: #000;
+			margin: 0 0 27px 0;
+			display: block;
+		}
+
+		.button-print-voucher {
+			width: 698px;
+			height: 93px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			border-radius: 6.4px;
+			text-transform: uppercase;
+			font: 32px/44px $opensans-bold;
+			letter-spacing: 3.2px;
+			background-color: #000;
+			color: #FFF;
+		}
+
+		.coupon {
+			@include img-cover(510px, 215px, '/assets/images/pimple-pop/coupon@2x.png');
+			margin: 0 auto 81px auto;
+			padding: 43px 73px 43px 148px;
+		}
+
+		.coupon__text-reward {
+			font: 48px/67px $opensans-bold;
+			letter-spacing: 2.5px;
+			color: #B22655;
+			text-align: left;
+			display: block;
+		}
+
+		.modal-printed {
+				.modal-content{ 
+					height: 1083px;
+				}
+				.modal-dismiss {
+					position: absolute;
+					top: 30px;
+					right: 60px;
+					z-index: 1;
+				}
+
+				.greeting {
+					font: 32px/50px $opensans-regular;
+					margin: 0 0 50px 0;
+				}
+
+				.btn-back {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 698px;
+					height: 93px;
+					border-radius: 6px;
+					font: 32px/44px $opensans-bold;
+					letter-spacing: 3.2px;
+					text-transform: uppercase;
+					background-color: #000;
+					color: #fff;
+				}
+				
+
+				.heading {
+					font: 40px/56px $opensans-bold;
+					letter-spacing: 2.5px;
+					color: #B22655;
+					margin: 54px 0 32px 0;
+				}
+			
+		}
+
+		.modal-voucher {
+			.modal-content{ 
+				height: 880px;
+				padding: 0 60px;
+			}
+			.modal-dismiss {
+				position: absolute;
+				top: 30px;
+				right: 60px;
+				z-index: 1;
+			}
+			#barcode {
+				margin-bottom: 30px;
+			}
+			.copywriting {
+				font: 32px/36px $opensans-regular;
+				margin: 0 0 20px 0;
+				color: #000;
+			}
+			.btn-back {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 698px;
+				height: 93px;
+				border-radius: 6px;
+				font: 32px/44px $opensans-bold;
+				letter-spacing: 3.2px;
+				text-transform: uppercase;
+				background-color: #000;
+				color: #fff;
+			}
+
+			.fullname {
+				font: 35px/40px $opensans-regular;
+				margin: 30px 0 20px 0;
+				&.bolder {
+					font-family: $opensans-bold;
+				}
+			}
+			
+			.greeting {
+				font: 30px/40px $opensans-regular;
+				margin: 0 0 20px 0;
+			}
+
+			.heading {
+				font: 40px/56px $opensans-bold;
+				letter-spacing: 2.5px;
+				color: #B22655;
+				margin: 54px 0 32px 0;
+			}
+
+			.minimum {
+				font: 26px/36px $opensans-regular;
+				margin: 0 0 20px 0;
+				color: #000;
+			}
+
+			.reward {
+				font: 40px/56px $opensans-bold;
+				margin: 0;
+			}
+		}
+
+		.modal-header, .modal-footer {
+			padding: 0;
+		}
+		.modal-dialog {
+			margin-top: 120px;
+			width: auto;
+			height: auto;
+		}
+
+		.modal-content {
+			margin: 0 auto;
+			width: 792px;
+			height: 892px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			border-radius: 16px;
+			box-shadow: none;
+		}
+
+		.print-voucher {
+			.copywriting {
+				font: 32px/50px $opensans-regular;
+				margin: 70px 0 0 0;	
+			}
+		}
+
+		.total-point {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			bottom: -200px;
+			left: 0;
+			right: 0;
+			text-align: center;
+			z-index: 4;
+			margin: 0 auto;
+			flex-direction: column;
+			@include img-cover(398px, 400px, '/assets/images/pimple-pop/circle-total-score.png');
+		}
+
+		.total-point__heading {
+			font: 40px/40px $opensans-bold;
+			letter-spacing: 0;
+			color: #000000;
+			margin: 0 0 20px 0;
+			display: block;
+		}
+
+		.total-point__number {
+			font: 90px/90px $opensans-bold;
+			letter-spacing: 0;
+			margin: 0 0 24px 0;
+			color: #B22655;
+		}
+
+		.total-point__text {
+			font: 40px/40px $opensans-bold;
+			letter-spacing: 0;
+			color: #000000;
+		}
+
+		.woman-clean {
+			position: relative;
+			@include img-cover(100%, 835px, '/assets/images/pimple-pop/woman-clean@2x.png');
+		}
+	}
+}
