@@ -1,5 +1,5 @@
 <div class="my-profile">
-  <img src="/assets/images/global/thofik-wiranata.png" class="my-profile__avatar img-responsive" />
+  <img src="{{ '/assets/images/global/thofik-wiranata.png' | relative_url }}" class="my-profile__avatar img-responsive" />
   <ul class="my-profile__navigation">
     {% for item in site.data.navigation %}
     <li class="my-profile__navigation__link {% if (item.link == page.url) %}active{% endif %}">
