@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/fontello/css/fontello.css">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/fontello/css/fontello.css' | relative_url }}">
     {% feed_meta %}
     {% seo %}
   </head>
@@ -23,7 +23,7 @@
   		</div>
   	</div>
 
-    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script type="text/javascript" src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
 </html>

@@ -2,8 +2,8 @@ collections:
   authors:
 
 defaults:
-  url: https://thofik93.github.io
-  baseurl: /portfolio-site
+  - url: https://thofik93.github.io
+  - baseurl: /portfolio-site
   - scope:
       path: ""
       type: "authors"

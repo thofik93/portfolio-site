@@ -1,1089 +1,287 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-body {
-  line-height: 1; }
+body { line-height: 1; }
 
-ol, ul {
-  list-style: none; }
+ol, ul { list-style: none; }
 
-blockquote, q {
-  quotes: none; }
+blockquote, q { quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
 
-@font-face {
-  font-family: 'OpenSans-Bold';
-  src: url("fonts/opensans/OpenSans-Bold.eot");
+@font-face { font-family: 'OpenSans-Bold'; src: url("fonts/opensans/OpenSans-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("fonts/opensans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-Bold.woff2") format("woff2"), url("fonts/opensans/OpenSans-Bold.woff") format("woff"), url("fonts/opensans/OpenSans-Bold.ttf") format("truetype"), url("fonts/opensans/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+src: url("fonts/opensans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-Bold.woff2") format("woff2"), url("fonts/opensans/OpenSans-Bold.woff") format("woff"), url("fonts/opensans/OpenSans-Bold.ttf") format("truetype"), url("fonts/opensans/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
   /* Legacy iOS */ }
-@font-face {
-  font-family: 'OpenSans-SemiBold';
-  src: url("fonts/opensans/OpenSans-SemiBold.eot");
+@font-face { font-family: 'OpenSans-SemiBold'; src: url("fonts/opensans/OpenSans-SemiBold.eot");
   /* IE9 Compat Modes */
-  src: url("fonts/opensans/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-SemiBold.woff2") format("woff2"), url("fonts/opensans/OpenSans-SemiBold.woff") format("woff"), url("fonts/opensans/OpenSans-SemiBold.ttf") format("truetype"), url("fonts/opensans/OpenSans-SemiBold.svg#OpenSans-SemiBold") format("svg");
+src: url("fonts/opensans/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-SemiBold.woff2") format("woff2"), url("fonts/opensans/OpenSans-SemiBold.woff") format("woff"), url("fonts/opensans/OpenSans-SemiBold.ttf") format("truetype"), url("fonts/opensans/OpenSans-SemiBold.svg#OpenSans-SemiBold") format("svg");
   /* Legacy iOS */ }
-@font-face {
-  font-family: 'OpenSans-ExtraBold';
-  src: url("fonts/opensans/OpenSans-ExtraBold.eot");
+@font-face { font-family: 'OpenSans-ExtraBold'; src: url("fonts/opensans/OpenSans-ExtraBold.eot");
   /* IE9 Compat Modes */
-  src: url("fonts/opensans/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-ExtraBold.woff2") format("woff2"), url("fonts/opensans/OpenSans-ExtraBold.woff") format("woff"), url("fonts/opensans/OpenSans-ExtraBold.ttf") format("truetype"), url("fonts/opensans/OpenSans-ExtraBold.svg#OpenSans-ExtraBold") format("svg");
+src: url("fonts/opensans/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-ExtraBold.woff2") format("woff2"), url("fonts/opensans/OpenSans-ExtraBold.woff") format("woff"), url("fonts/opensans/OpenSans-ExtraBold.ttf") format("truetype"), url("fonts/opensans/OpenSans-ExtraBold.svg#OpenSans-ExtraBold") format("svg");
   /* Legacy iOS */ }
-@font-face {
-  font-family: 'OpenSans-Italic';
-  src: url("fonts/opensans/OpenSans-Italic.eot");
+@font-face { font-family: 'OpenSans-Italic'; src: url("fonts/opensans/OpenSans-Italic.eot");
   /* IE9 Compat Modes */
-  src: url("fonts/opensans/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-Italic.woff2") format("woff2"), url("fonts/opensans/OpenSans-Italic.woff") format("woff"), url("fonts/opensans/OpenSans-Italic.ttf") format("truetype"), url("fonts/opensans/OpenSans-Italic.svg#OpenSans-Italic") format("svg");
+src: url("fonts/opensans/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-Italic.woff2") format("woff2"), url("fonts/opensans/OpenSans-Italic.woff") format("woff"), url("fonts/opensans/OpenSans-Italic.ttf") format("truetype"), url("fonts/opensans/OpenSans-Italic.svg#OpenSans-Italic") format("svg");
   /* Legacy iOS */ }
-@font-face {
-  font-family: 'OpenSans-Light';
-  src: url("fonts/opensans/OpenSans-Light.eot");
+@font-face { font-family: 'OpenSans-Light'; src: url("fonts/opensans/OpenSans-Light.eot");
   /* IE9 Compat Modes */
-  src: url("fonts/opensans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-Light.woff2") format("woff2"), url("fonts/opensans/OpenSans-Light.woff") format("woff"), url("fonts/opensans/OpenSans-Light.ttf") format("truetype"), url("fonts/opensans/OpenSans-Light.svg#OpenSans-Light") format("svg");
+src: url("fonts/opensans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-Light.woff2") format("woff2"), url("fonts/opensans/OpenSans-Light.woff") format("woff"), url("fonts/opensans/OpenSans-Light.ttf") format("truetype"), url("fonts/opensans/OpenSans-Light.svg#OpenSans-Light") format("svg");
   /* Legacy iOS */ }
-@font-face {
-  font-family: 'OpenSans-Regular';
-  src: url("fonts/opensans/OpenSans-Regular.eot");
+@font-face { font-family: 'OpenSans-Regular'; src: url("fonts/opensans/OpenSans-Regular.eot");
   /* IE9 Compat Modes */
-  src: url("fonts/opensans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-Regular.woff2") format("woff2"), url("fonts/opensans/OpenSans-Regular.woff") format("woff"), url("fonts/opensans/OpenSans-Regular.ttf") format("truetype"), url("fonts/opensans/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+src: url("fonts/opensans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/opensans/OpenSans-Regular.woff2") format("woff2"), url("fonts/opensans/OpenSans-Regular.woff") format("woff"), url("fonts/opensans/OpenSans-Regular.ttf") format("truetype"), url("fonts/opensans/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
   /* Legacy iOS */ }
 /*
 	variable fonts
 */
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-* {
-  box-sizing: border-box; }
+* { box-sizing: border-box; }
 
-*:before,
-*:after {
-  box-sizing: border-box; }
+*:before, *:after { box-sizing: border-box; }
 
-body {
-  background-color: #EFEFEF;
-  color: #333;
-  font-family: "OpenSans-Regular", sans-serif; }
+body { background-color: #EFEFEF; color: #333; font-family: "OpenSans-Regular", sans-serif; }
 
-a {
-  text-decoration: none;
-  color: inherit; }
+a { text-decoration: none; color: inherit; }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto; }
+.container { padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto; }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px; } }
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto; }
+@media (min-width: 1200px) { .container { width: 1170px; } }
+.img-responsive { display: block; max-width: 100%; height: auto; }
 
-.content {
-  width: 75%; }
+.content { width: 75%; }
 
-.sidebar {
-  width: 25%; }
+.sidebar { width: 25%; }
 
-.wrapper {
-  margin-top: 80px; }
+.wrapper { margin-top: 80px; }
 
-.row {
-  margin-left: -15px;
-  margin-right: -15px; }
-  .row:before, .row:after {
-    content: " ";
-    display: table;
-    zoom: 1; }
-  .row:after {
-    clear: both; }
+.row { margin-left: -15px; margin-right: -15px; }
+.row:before, .row:after { content: " "; display: table; zoom: 1; }
+.row:after { clear: both; }
 
-.column {
-  position: relative;
-  padding: 0 15px;
-  float: left; }
+.column { position: relative; padding: 0 15px; float: left; }
 
-.desktop-3 {
-  position: relative;
-  width: 33.3333333333%; }
+.desktop-3 { position: relative; width: 33.3333333333%; }
 
-@media (max-width: 991px) {
-  .tablet-6 {
-    width: 50%; } }
-@media (max-width: 767px) {
-  .mobile-12 {
-    width: 100%; } }
-.my-profile__avatar {
-  filter: sepia(0%) brightness(100%) contrast(120%) saturate(125%) grayscale(0%) invert(0%) hue-rotate(0deg) blur(0px); }
+@media (max-width: 991px) { .tablet-6 { width: 50%; } }
+@media (max-width: 767px) { .mobile-12 { width: 100%; } }
+.my-profile__avatar { filter: sepia(0%) brightness(100%) contrast(120%) saturate(125%) grayscale(0%) invert(0%) hue-rotate(0deg) blur(0px); }
 
-.my-profile__copyright {
-  margin-top: 10px;
-  font-size: 13px;
-  line-height: 22px;
-  color: #999;
-  text-align: center; }
+.my-profile__copyright { margin-top: 10px; font-size: 13px; line-height: 22px; color: #999; text-align: center; }
 
-.my-profile__footer {
-  padding: 20px 0;
-  background-color: #FFFFFF; }
+.my-profile__footer { padding: 20px 0; background-color: #FFFFFF; }
 
-.my-profile__navigation {
-  background-color: #33373d;
-  font-size: 22px; }
+.my-profile__navigation { background-color: #33373d; font-size: 22px; }
 
-.my-profile__navigation__icon {
-  position: absolute;
-  right: 25px;
-  top: 9px; }
+.my-profile__navigation__icon { position: absolute; right: 25px; top: 9px; }
 
-.my-profile__navigation__link {
-  position: relative;
-  color: #85878b;
-  border-bottom: 1px solid #26292e; }
-  .my-profile__navigation__link.active {
-    background-color: #cd5353;
-    color: #FFFFFF; }
-  .my-profile__navigation__link:hover {
-    background-color: #cd5353;
-    color: #FFFFFF; }
-  .my-profile__navigation__link > a {
-    font-size: 12px;
-    padding: 15px 25px;
-    display: block; }
+.my-profile__navigation__link { position: relative; color: #85878b; border-bottom: 1px solid #26292e; }
+.my-profile__navigation__link.active { background-color: #cd5353; color: #FFFFFF; }
+.my-profile__navigation__link:hover { background-color: #cd5353; color: #FFFFFF; }
+.my-profile__navigation__link > a { font-size: 12px; padding: 15px 25px; display: block; }
 
-.my-profile__social-media {
-  margin: 0 auto;
-  width: 115px; }
-  .my-profile__social-media:before, .my-profile__social-media:after {
-    content: " ";
-    display: table;
-    zoom: 1; }
-  .my-profile__social-media:after {
-    clear: both; }
+.my-profile__social-media { margin: 0 auto; width: 115px; }
+.my-profile__social-media:before, .my-profile__social-media:after { content: " "; display: table; zoom: 1; }
+.my-profile__social-media:after { clear: both; }
 
-.my-profile__social-media__platform {
-  height: 35px;
-  width: 35px;
-  display: flex;
-  float: left;
-  align-items: center;
-  justify-content: center;
-  margin-right: 5px;
-  border: 2px solid #33373d;
-  border-radius: 50%;
-  color: #33373d;
-  font-size: 14px; }
-  .my-profile__social-media__platform:hover {
-    color: #cd5353;
-    border-color: #cd5353; }
-  .my-profile__social-media__platform:before {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    width: auto !important; }
-  .my-profile__social-media__platform:last-child {
-    margin-right: 0; }
+.my-profile__social-media__platform { height: 35px; width: 35px; display: flex; float: left; align-items: center; justify-content: center; margin-right: 5px; border: 2px solid #33373d; border-radius: 50%; color: #33373d; font-size: 14px; }
+.my-profile__social-media__platform:hover { color: #cd5353; border-color: #cd5353; }
+.my-profile__social-media__platform:before { margin-left: 0 !important; margin-right: 0 !important; width: auto !important; }
+.my-profile__social-media__platform:last-child { margin-right: 0; }
 
-.progress {
-  height: 15px;
-  border-radius: 0;
-  margin-bottom: 15px;
-  box-shadow: none; }
+.progress { height: 15px; border-radius: 0; margin-bottom: 15px; box-shadow: none; }
 
-.progress .progress-bar {
-  background-color: #212121; }
+.progress .progress-bar { background-color: #212121; }
 
-.progress .progress-bar_theme-maroon {
-  background-color: #d81143; }
+.progress .progress-bar_theme-maroon { background-color: #d81143; }
 
-.progress .progress-bar_theme-sky {
-  background-color: #87b3da; }
+.progress .progress-bar_theme-sky { background-color: #87b3da; }
 
-.progress .progress-bar_theme-forest {
-  background-color: #5daf61; }
+.progress .progress-bar_theme-forest { background-color: #5daf61; }
 
-.progress .progress-bar_theme-orange {
-  background-color: #ff8f35; }
+.progress .progress-bar_theme-orange { background-color: #ff8f35; }
 
-.timeline {
-  position: relative; }
-  .timeline:before {
-    content: " ";
-    background: linear-gradient(to bottom, #ededed 1%, #ededed 75%, #ffffff 100%);
-    position: absolute;
-    bottom: 0;
-    left: 18px;
-    top: 0;
-    width: 3px;
-    height: 100%; }
-  .timeline:after {
-    background-color: #ffffff;
-    border: 3px solid #efefef;
-    font-family: 'fontello';
-    top: 0;
-    left: -5px;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    text-align: center;
-    color: #333;
-    font-size: 20px;
-    line-height: 45px;
-    border-radius: 50%; }
+.timeline { position: relative; }
+.timeline:before { content: " "; background: linear-gradient(to bottom, #ededed 1%, #ededed 75%, #ffffff 100%); position: absolute; bottom: 0; left: 18px; top: 0; width: 3px; height: 100%; }
+.timeline:after { background-color: #ffffff; border: 3px solid #efefef; font-family: 'fontello'; top: 0; left: -5px; width: 50px; height: 50px; position: absolute; text-align: center; color: #333; font-size: 20px; line-height: 45px; border-radius: 50%; }
 
-.timeline__content {
-  margin-top: 60px; }
+.timeline__content { margin-top: 60px; }
 
-.timeline__date {
-  font: 12px/22px "OpenSans-Italic", sans-serif;
-  color: #666; }
-  .timeline__date > i {
-    color: #ccc;
-    margin-right: 2px;
-    font-size: 12px; }
+.timeline__date { font: 12px/22px "OpenSans-Italic", sans-serif; color: #666; }
+.timeline__date > i { color: #ccc; margin-right: 2px; font-size: 12px; }
 
-.timeline__heading {
-  font: 14px/22px "OpenSans-Bold", sans-serif;
-  color: #333; }
+.timeline__heading { font: 14px/22px "OpenSans-Bold", sans-serif; color: #333; }
 
-.timeline__paraf {
-  font: 14px/22px "OpenSans-Regular", sans-serif;
-  color: #999; }
+.timeline__paraf { font: 14px/22px "OpenSans-Regular", sans-serif; color: #999; }
 
-.timeline__row:before, .timeline__row:after {
-  content: " ";
-  display: table; }
-.timeline__row:after {
-  clear: both; }
+.timeline__row:before, .timeline__row:after { content: " "; display: table; }
+.timeline__row:after { clear: both; }
 
-.timeline__step {
-  padding-left: 50px;
-  padding-top: 20px;
-  position: relative;
-  margin-bottom: 10px; }
-  .timeline__step:after {
-    background-color: #cd5353;
-    border: 3px solid #ffffff;
-    content: " ";
-    height: 15px;
-    left: 12px;
-    position: absolute;
-    text-align: center;
-    top: 24px;
-    width: 15px;
-    border-radius: 50%; }
+.timeline__step { padding-left: 50px; padding-top: 20px; position: relative; margin-bottom: 10px; }
+.timeline__step:after { background-color: #cd5353; border: 3px solid #ffffff; content: " "; height: 15px; left: 12px; position: absolute; text-align: center; top: 24px; width: 15px; border-radius: 50%; }
 
-.timeline_academic:after {
-  content: '\f19d'; }
+.timeline_academic:after { content: '\f19d'; }
 
-.timeline_experience:after {
-  content: '\e817'; }
+.timeline_experience:after { content: '\e817'; }
 
-.page--default {
-  background-color: #FFFFFF; }
-  .page--default .btn-download-cv {
-    width: 183px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #33373d;
-    color: #FFFFFF;
-    font: 12px/22px "OpenSans-Bold", sans-serif;
-    margin: 0 auto; }
-    .page--default .btn-download-cv > i {
-      margin-right: 8px; }
-  .page--default .body {
-    padding: 40px; }
-  .page--default .head {
-    position: relative;
-    padding: 30px 10px 2px 40px;
-    border-bottom: 1px solid #efefef; }
-  .page--default .head__divider {
-    left: 30px;
-    position: absolute;
-    top: 44px; }
-  .page--default .head__title {
-    font-size: 15px;
-    margin-bottom: 10px;
-    font-family: "OpenSans-ExtraBold", sans-serif; }
-  .page--default .section--footer .head__divider {
-    top: 18px;
-    left: 50%;
-    margin-left: -28.5px; }
-  .page--default .zigzag {
-    fill: none;
-    stroke-miterlimit: 10;
-    stroke: #cd5353;
-    background-color: #FFFFFF; }
-    .page--default .zigzag:before, .page--default .zigzag:after {
-      content: " ";
-      display: table; }
-    .page--default .zigzag:after {
-      clear: both; }
-    .page--default .zigzag.large {
-      padding: 0 10px;
-      stroke-width: 4.3; }
-    .page--default .zigzag.medium {
-      stroke-width: 4.3;
-      width: 6%; }
+.page--default { background-color: #FFFFFF; }
+.page--default .btn-download-cv { width: 183px; height: 38px; display: flex; align-items: center; justify-content: center; background-color: #33373d; color: #FFFFFF; font: 12px/22px "OpenSans-Bold", sans-serif; margin: 0 auto; }
+.page--default .btn-download-cv > i { margin-right: 8px; }
+.page--default .body { padding: 40px; }
+.page--default .head { position: relative; padding: 30px 10px 2px 40px; border-bottom: 1px solid #efefef; }
+.page--default .head__divider { left: 30px; position: absolute; top: 44px; }
+.page--default .head__title { font-size: 15px; margin-bottom: 10px; font-family: "OpenSans-ExtraBold", sans-serif; }
+.page--default .section--footer .head__divider { top: 18px; left: 50%; margin-left: -28.5px; }
+.page--default .zigzag { fill: none; stroke-miterlimit: 10; stroke: #cd5353; background-color: #FFFFFF; }
+.page--default .zigzag:before, .page--default .zigzag:after { content: " "; display: table; }
+.page--default .zigzag:after { clear: both; }
+.page--default .zigzag.large { padding: 0 10px; stroke-width: 4.3; }
+.page--default .zigzag.medium { stroke-width: 4.3; width: 6%; }
 
-.page--about .about-me {
-  columns: 343px 2; }
-  .page--about .about-me > p {
-    line-height: 22px;
-    color: #555; }
-.page--about .fullname {
-  font: 28px/28px "OpenSans-ExtraBold", sans-serif;
-  margin-bottom: 10px; }
-.page--about .list-skills__name {
-  font: 13px/15px "OpenSans-SemiBold", sans-serif;
-  color: #666;
-  margin-bottom: 8px;
-  text-transform: uppercase; }
-.page--about .progress {
-  border: 1px solid #cd5353;
-  height: 16px;
-  border-radius: 50px; }
-.page--about .progress-bar {
-  background-color: #cd5353;
-  height: 14px;
-  border-radius: 50px;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 11px;
-  letter-spacing: 0.4px; }
-.page--about .profession {
-  font: 22px/24px "OpenSans-Light", sans-serif;
-  color: #777;
-  margin-bottom: 30px; }
-.page--about .skill {
-  margin-bottom: 30px; }
-.page--about .skill-set-name {
-  font: 16px/18px "OpenSans-Bold", sans-serif;
-  margin-bottom: 20px; }
-.page--about .text_size-big {
-  font-size: 45px; }
+.page--about .about-me { columns: 343px 2; }
+.page--about .about-me > p { line-height: 22px; color: #555; }
+.page--about .fullname { font: 28px/28px "OpenSans-ExtraBold", sans-serif; margin-bottom: 10px; }
+.page--about .list-skills__name { font: 13px/15px "OpenSans-SemiBold", sans-serif; color: #666; margin-bottom: 8px; text-transform: uppercase; }
+.page--about .progress { border: 1px solid #cd5353; height: 16px; border-radius: 50px; }
+.page--about .progress-bar { background-color: #cd5353; height: 14px; border-radius: 50px; color: #FFFFFF; text-align: center; font-size: 11px; letter-spacing: 0.4px; }
+.page--about .profession { font: 22px/24px "OpenSans-Light", sans-serif; color: #777; margin-bottom: 30px; }
+.page--about .skill { margin-bottom: 30px; }
+.page--about .skill-set-name { font: 16px/18px "OpenSans-Bold", sans-serif; margin-bottom: 20px; }
+.page--about .text_size-big { font-size: 45px; }
 
-.page--contact .box-info-contact {
-  position: relative;
-  padding: 20px;
-  border: 1px solid #efefef;
-  text-align: center; }
-.page--contact .heading-location {
-  padding: 40px 0;
-  font-size: 18px;
-  color: #2d2d2d;
-  line-height: 30px;
-  font-family: "OpenSans-Bold", sans-serif; }
-.page--contact .icon-location > path {
-  fill: #FFFFFF; }
-.page--contact .icon-location-wrapper {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  background-color: #cd5353;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  margin-left: -30px;
-  z-index: 10; }
-.page--contact .list-contact {
-  padding-bottom: 25px; }
-  .page--contact .list-contact > li {
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    font-family: "OpenSans-SemiBold", sans-serif; }
-.page--contact .list-contact__icon {
-  background: #33373d;
-  color: #ffffff;
-  font-size: 20px;
-  left: 50%;
-  line-height: 52px;
-  margin-left: -25px;
-  position: absolute;
-  top: 64px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%; }
-.page--contact .list-contact__text {
-  font-size: 14px;
-  line-height: 22px;
-  color: #999; }
+.page--contact .box-info-contact { position: relative; padding: 20px; border: 1px solid #efefef; text-align: center; }
+.page--contact .heading-location { padding: 40px 0; font-size: 18px; color: #2d2d2d; line-height: 30px; font-family: "OpenSans-Bold", sans-serif; }
+.page--contact .icon-location > path { fill: #FFFFFF; }
+.page--contact .icon-location-wrapper { height: 60px; width: 60px; border-radius: 50%; background-color: #cd5353; display: flex; align-items: center; justify-content: center; position: absolute; top: -30px; left: 50%; margin-left: -30px; z-index: 10; }
+.page--contact .list-contact { padding-bottom: 25px; }
+.page--contact .list-contact > li { position: relative; display: inline-block; width: 200px; font-family: "OpenSans-SemiBold", sans-serif; }
+.page--contact .list-contact__icon { background: #33373d; color: #ffffff; font-size: 20px; left: 50%; line-height: 52px; margin-left: -25px; position: absolute; top: 64px; width: 50px; height: 50px; border-radius: 50%; }
+.page--contact .list-contact__text { font-size: 14px; line-height: 22px; color: #999; }
 
-.page--portfolio .body {
-  text-align: center; }
-.page--portfolio .divider {
-  position: relative;
-  margin-bottom: 30px;
-  margin-top: 20px; }
-  .page--portfolio .divider:before {
-    background: #efefef;
-    content: "";
-    height: 1px;
-    left: 50%;
-    margin-left: -60px;
-    position: absolute;
-    top: 13px;
-    width: 120px; }
-.page--portfolio .list-category {
-  display: inline-block; }
-  .page--portfolio .list-category > li {
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 13px;
-    font-family: "OpenSans-SemiBold", sans-serif;
-    line-height: 22px; }
-    .page--portfolio .list-category > li.active {
-      color: #cd5353; }
-    .page--portfolio .list-category > li:hover {
-      color: #cd5353; }
-    .page--portfolio .list-category > li:last-child {
-      margin-right: 0; }
-.page--portfolio .portfolio-card {
-  margin-bottom: 30px;
-  display: block;
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 187px; }
-  .page--portfolio .portfolio-card .zigzag.medium {
-    background-color: transparent;
-    padding: 0;
-    stroke: #FFFFFF;
-    width: 100%;
-    margin-bottom: 7px; }
-  .page--portfolio .portfolio-card:hover .portfolio-card__content {
-    opacity: 1;
-    height: auto;
-    overflow: visible; }
-.page--portfolio .portfolio-card__category {
-  font-size: 12px;
-  font-family: "OpenSans-Italic", sans-serif; }
-.page--portfolio .portfolio-card__content {
-  transition: opacity .3s ease;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 11;
-  background-color: rgba(205, 83, 83, 0.95);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF;
-  flex-direction: column; }
-.page--portfolio .portfolio-card__project-name {
-  font-size: 13px;
-  font-family: "OpenSans-Bold", sans-serif;
-  line-height: 22px; }
-.page--portfolio .zigzag {
-  margin: 0 auto;
-  padding-top: 2px;
-  position: relative; }
+.page--portfolio .body { text-align: center; }
+.page--portfolio .divider { position: relative; margin-bottom: 30px; margin-top: 20px; }
+.page--portfolio .divider:before { background: #efefef; content: ""; height: 1px; left: 50%; margin-left: -60px; position: absolute; top: 13px; width: 120px; }
+.page--portfolio .list-category { display: inline-block; }
+.page--portfolio .list-category > li { display: inline-block; margin-right: 20px; font-size: 13px; font-family: "OpenSans-SemiBold", sans-serif; line-height: 22px; }
+.page--portfolio .list-category > li.active { color: #cd5353; }
+.page--portfolio .list-category > li:hover { color: #cd5353; }
+.page--portfolio .list-category > li:last-child { margin-right: 0; }
+.page--portfolio .portfolio-card { margin-bottom: 30px; display: block; position: relative; background-position: center; background-size: cover; width: 100%; height: 187px; }
+.page--portfolio .portfolio-card .zigzag.medium { background-color: transparent; padding: 0; stroke: #FFFFFF; width: 100%; margin-bottom: 7px; }
+.page--portfolio .portfolio-card:hover .portfolio-card__content { opacity: 1; height: auto; overflow: visible; }
+.page--portfolio .portfolio-card__category { font-size: 12px; font-family: "OpenSans-Italic", sans-serif; }
+.page--portfolio .portfolio-card__content { transition: opacity .3s ease; opacity: 0; height: 0; overflow: hidden; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 11; background-color: rgba(205, 83, 83, 0.95); display: flex; align-items: center; justify-content: center; color: #FFFFFF; flex-direction: column; }
+.page--portfolio .portfolio-card__project-name { font-size: 13px; font-family: "OpenSans-Bold", sans-serif; line-height: 22px; }
+.page--portfolio .zigzag { margin: 0 auto; padding-top: 2px; position: relative; }
 
-.progress {
-  overflow: hidden;
-  background-color: #D8D8D8;
-  border-radius: 9px;
-  height: 18px;
-  width: 100%;
-  margin-bottom: 0; }
+.progress { overflow: hidden; background-color: #D8D8D8; border-radius: 9px; height: 18px; width: 100%; margin-bottom: 0; }
 
-.progress-bar {
-  float: left;
-  height: 100%;
-  background-color: #F384A7;
-  transition: width .6s ease;
-  border-radius: 9px; }
+.progress-bar { float: left; height: 100%; background-color: #F384A7; transition: width .6s ease; border-radius: 9px; }
 
-.page--pimple-pop {
-  min-height: 1920px;
-  text-align: center; }
-  .page--pimple-pop .wrapper {
-    margin-top: 0; }
-  .page--pimple-pop .container-pimple {
-    width: 861px;
-    margin: 0 auto; }
-  .page--pimple-pop.finish {
-    position: relative; }
-    .page--pimple-pop.finish .close-button {
-      position: absolute;
-      z-index: 2;
-      top: 50px;
-      right: 50px; }
-  .page--pimple-pop.landing {
-    position: relative;
-    padding: 80px 0 0 0;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("/assets/images/pimple-pop/landing-bg@2x.png");
-    display: block; }
-    .page--pimple-pop.landing .close-button {
-      position: absolute;
-      top: 50px;
-      right: 50px;
-      z-index: 11;
-      height: 100px; }
-    .page--pimple-pop.landing .logo-pimple-pop {
-      width: 600px;
-      margin-bottom: 60px; }
-    .page--pimple-pop.landing .logo-soco {
-      height: 70px;
-      margin-bottom: 50px; }
-    .page--pimple-pop.landing .play {
-      width: 280px; }
-    .page--pimple-pop.landing .text-copywriting {
-      font: 45px/58px "OpenSans-Regular", sans-serif;
-      letter-spacing: 0;
-      color: #000;
-      margin: 0 0 100px 0; }
-    .page--pimple-pop.landing .text-greeting {
-      font: 60px/83px "OpenSans-Bold", sans-serif;
-      letter-spacing: 0;
-      color: #000;
-      margin-bottom: 150px; }
-    .page--pimple-pop.landing .text-heading {
-      font: 38px/53px "OpenSans-Bold", sans-serif;
-      letter-spacing: 3.8px;
-      color: #000;
-      margin: 0 0 60px 0;
-      text-transform: uppercase; }
-      .page--pimple-pop.landing .text-heading.last {
-        margin-bottom: 43px; }
+.page--pimple-pop { min-height: 1920px; text-align: center; }
+.page--pimple-pop .wrapper { margin-top: 0; }
+.page--pimple-pop .container-pimple { width: 861px; margin: 0 auto; }
+.page--pimple-pop.finish { position: relative; }
+.page--pimple-pop.finish .close-button { position: absolute; z-index: 2; top: 50px; right: 50px; }
+.page--pimple-pop.landing { position: relative; padding: 80px 0 0 0; background-size: cover; width: 100%; height: auto; background-position: center; background-repeat: no-repeat; background-image: url("/assets/images/pimple-pop/landing-bg@2x.png"); display: block; }
+.page--pimple-pop.landing .close-button { position: absolute; top: 50px; right: 50px; z-index: 11; height: 100px; }
+.page--pimple-pop.landing .logo-pimple-pop { width: 600px; margin-bottom: 60px; }
+.page--pimple-pop.landing .logo-soco { height: 70px; margin-bottom: 50px; }
+.page--pimple-pop.landing .play { width: 280px; }
+.page--pimple-pop.landing .text-copywriting { font: 45px/58px "OpenSans-Regular", sans-serif; letter-spacing: 0; color: #000; margin: 0 0 100px 0; }
+.page--pimple-pop.landing .text-greeting { font: 60px/83px "OpenSans-Bold", sans-serif; letter-spacing: 0; color: #000; margin-bottom: 150px; }
+.page--pimple-pop.landing .text-heading { font: 38px/53px "OpenSans-Bold", sans-serif; letter-spacing: 3.8px; color: #000; margin: 0 0 60px 0; text-transform: uppercase; }
+.page--pimple-pop.landing .text-heading.last { margin-bottom: 43px; }
 
-.page--pimple-pop.how-to-play {
-  padding: 60px 0 0 0;
-  position: relative;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/images/pimple-pop/bg-how-to-play@2x.png");
-  display: block; }
-  .page--pimple-pop.how-to-play .acne-name {
-    font: 30px/42px "OpenSans-Bold", sans-serif;
-    letter-spacing: 0;
-    color: #000;
-    margin: 0; }
-  .page--pimple-pop.how-to-play .acne-point {
-    font: 30px/32px "OpenSans-Bold", sans-serif;
-    letter-spacing: 0.83px;
-    color: #B22655;
-    margin: 0; }
-  .page--pimple-pop.how-to-play .acne-text {
-    font: 25px/35px "OpenSans-Regular", sans-serif;
-    letter-spacing: 0;
-    color: #000;
-    margin: 0; }
-  .page--pimple-pop.how-to-play .acne-wrapper {
-    position: absolute;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-size: cover;
-    width: 322px;
-    height: 326px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("/assets/images/pimple-pop/circle-acne-scar@2x.png");
-    display: block; }
-  .page--pimple-pop.how-to-play .acne-wrapper--mystery {
-    top: 728px;
-    right: 29px;
-    background-image: url("/assets/images/pimple-pop/circle-mystery-acne@2x.png"); }
-  .page--pimple-pop.how-to-play .acne-wrapper--red {
-    top: 749px;
-    left: 37px;
-    width: 321px;
-    height: 319px;
-    background-image: url("/assets/images/pimple-pop/circle-red-acne@2x.png"); }
-  .page--pimple-pop.how-to-play .acne-wrapper--scar {
-    top: 0;
-    left: 358px; }
-    .page--pimple-pop.how-to-play .acne-wrapper--scar .acne-img {
-      margin-bottom: 4px; }
-  .page--pimple-pop.how-to-play .acne-wrapper--small {
-    top: 255px;
-    left: 26px; }
-    .page--pimple-pop.how-to-play .acne-wrapper--small .acne-img {
-      margin-bottom: 4px; }
-  .page--pimple-pop.how-to-play .acne-wrapper--whitehead {
-    top: 255px;
-    right: 25px;
-    background-image: url("/assets/images/pimple-pop/circle-whitehead@2x.png"); }
-    .page--pimple-pop.how-to-play .acne-wrapper--whitehead .acne-img {
-      margin-bottom: 2px; }
-  .page--pimple-pop.how-to-play .box-how-to-play {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    height: 739px;
-    width: 100%;
-    padding: 78px 0 92px;
-    text-align: center;
-    background-color: #F8C3C4; }
-  .page--pimple-pop.how-to-play .button-play-now {
-    display: flex;
-    height: 98px;
-    width: 685px;
-    margin: 0 auto 80px;
-    background-color: #D33575;
-    color: #FFF;
-    border: 10px solid #B22655;
-    font: 32px/44px "OpenSans-Bold", sans-serif;
-    letter-spacing: 3.2px;
-    text-transform: uppercase;
-    border-radius: 49px;
-    justify-content: center;
-    align-items: center; }
-  .page--pimple-pop.how-to-play .container-pimple {
-    width: 1035px;
-    position: relative; }
-  .page--pimple-pop.how-to-play .heading {
-    font: 50px/28px "OpenSans-Bold", sans-serif;
-    letter-spacing: 3.57px;
-    color: #B22655;
-    margin: 0 0 50px 0; }
-  .page--pimple-pop.how-to-play .list-style {
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("/assets/images/pimple-pop/ordered-list-bg.png");
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: -65px;
-    z-index: 9;
-    font: 30px/42px "OpenSans-Bold", sans-serif;
-    letter-spacing: 0;
-    color: #FFFFFF; }
-  .page--pimple-pop.how-to-play .play-steps {
-    margin: 0 auto;
-    padding: 0;
-    width: 855px;
-    text-align: left; }
-    .page--pimple-pop.how-to-play .play-steps > li {
-      font: 28px/37px "OpenSans-Regular", sans-serif;
-      letter-spacing: 0;
-      color: #181818;
-      margin-bottom: 30px;
-      position: relative; }
-  .page--pimple-pop.how-to-play .play-steps__bolder {
-    font-family: "OpenSans-Bold", sans-serif; }
-  .page--pimple-pop.how-to-play .close-button {
-    position: absolute;
-    z-index: 2;
-    top: 50px;
-    right: 50px; }
+.page--pimple-pop.how-to-play { padding: 60px 0 0 0; position: relative; background-size: cover; width: 100%; height: auto; background-position: center; background-repeat: no-repeat; background-image: url("/assets/images/pimple-pop/bg-how-to-play@2x.png"); display: block; }
+.page--pimple-pop.how-to-play .acne-name { font: 30px/42px "OpenSans-Bold", sans-serif; letter-spacing: 0; color: #000; margin: 0; }
+.page--pimple-pop.how-to-play .acne-point { font: 30px/32px "OpenSans-Bold", sans-serif; letter-spacing: 0.83px; color: #B22655; margin: 0; }
+.page--pimple-pop.how-to-play .acne-text { font: 25px/35px "OpenSans-Regular", sans-serif; letter-spacing: 0; color: #000; margin: 0; }
+.page--pimple-pop.how-to-play .acne-wrapper { position: absolute; z-index: 10; display: flex; align-items: center; justify-content: center; flex-direction: column; background-size: cover; width: 322px; height: 326px; background-position: center; background-repeat: no-repeat; background-image: url("/assets/images/pimple-pop/circle-acne-scar@2x.png"); display: block; }
+.page--pimple-pop.how-to-play .acne-wrapper--mystery { top: 728px; right: 29px; background-image: url("/assets/images/pimple-pop/circle-mystery-acne@2x.png"); }
+.page--pimple-pop.how-to-play .acne-wrapper--red { top: 749px; left: 37px; width: 321px; height: 319px; background-image: url("/assets/images/pimple-pop/circle-red-acne@2x.png"); }
+.page--pimple-pop.how-to-play .acne-wrapper--scar { top: 0; left: 358px; }
+.page--pimple-pop.how-to-play .acne-wrapper--scar .acne-img { margin-bottom: 4px; }
+.page--pimple-pop.how-to-play .acne-wrapper--small { top: 255px; left: 26px; }
+.page--pimple-pop.how-to-play .acne-wrapper--small .acne-img { margin-bottom: 4px; }
+.page--pimple-pop.how-to-play .acne-wrapper--whitehead { top: 255px; right: 25px; background-image: url("/assets/images/pimple-pop/circle-whitehead@2x.png"); }
+.page--pimple-pop.how-to-play .acne-wrapper--whitehead .acne-img { margin-bottom: 2px; }
+.page--pimple-pop.how-to-play .box-how-to-play { position: absolute; bottom: 0; left: 0; right: 0; z-index: 10; height: 739px; width: 100%; padding: 78px 0 92px; text-align: center; background-color: #F8C3C4; }
+.page--pimple-pop.how-to-play .button-play-now { display: flex; height: 98px; width: 685px; margin: 0 auto 80px; background-color: #D33575; color: #FFF; border: 10px solid #B22655; font: 32px/44px "OpenSans-Bold", sans-serif; letter-spacing: 3.2px; text-transform: uppercase; border-radius: 49px; justify-content: center; align-items: center; }
+.page--pimple-pop.how-to-play .container-pimple { width: 1035px; position: relative; }
+.page--pimple-pop.how-to-play .heading { font: 50px/28px "OpenSans-Bold", sans-serif; letter-spacing: 3.57px; color: #B22655; margin: 0 0 50px 0; }
+.page--pimple-pop.how-to-play .list-style { background-size: cover; width: 50px; height: 50px; background-position: center; background-repeat: no-repeat; background-image: url("/assets/images/pimple-pop/ordered-list-bg.png"); display: block; display: flex; align-items: center; justify-content: center; position: absolute; top: 0; left: -65px; z-index: 9; font: 30px/42px "OpenSans-Bold", sans-serif; letter-spacing: 0; color: #FFFFFF; }
+.page--pimple-pop.how-to-play .play-steps { margin: 0 auto; padding: 0; width: 855px; text-align: left; }
+.page--pimple-pop.how-to-play .play-steps > li { font: 28px/37px "OpenSans-Regular", sans-serif; letter-spacing: 0; color: #181818; margin-bottom: 30px; position: relative; }
+.page--pimple-pop.how-to-play .play-steps__bolder { font-family: "OpenSans-Bold", sans-serif; }
+.page--pimple-pop.how-to-play .close-button { position: absolute; z-index: 2; top: 50px; right: 50px; }
 
-.page--pimple-pop.game .actor {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0;
-  transition: opacity .3s ease; }
-.page--pimple-pop.game .actor--small {
-  opacity: 1;
-  background-image: url("/assets/images/pimple-pop/actor-small@2x.png");
-  width: 64px;
-  height: 65px; }
-.page--pimple-pop.game .actor--red {
-  opacity: 1;
-  background-image: url("/assets/images/pimple-pop/actor-red@2x.png");
-  width: 59px;
-  height: 61px; }
-.page--pimple-pop.game .actor--scar {
-  opacity: 1;
-  background-image: url("/assets/images/pimple-pop/actor-scar@2x.png");
-  width: 72px;
-  height: 75px; }
-.page--pimple-pop.game .actor--whitehead {
-  opacity: 1;
-  background-image: url("/assets/images/pimple-pop/actor-whitehead@2x.png");
-  width: 56px;
-  height: 53px; }
-.page--pimple-pop.game .actor--mystery {
-  opacity: 1;
-  background-image: url("/assets/images/pimple-pop/actor-mystery@2x.png");
-  width: 58px;
-  height: 59px; }
-.page--pimple-pop.game .close-button {
-  margin-left: 15px; }
-.page--pimple-pop.game .col-pimple {
-  min-height: 1px;
-  width: 20%;
-  float: left;
-  height: 112px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-.page--pimple-pop.game .col-pimple:nth-child(6), .page--pimple-pop.game .col-pimple:nth-child(7), .page--pimple-pop.game .col-pimple:nth-child(8), .page--pimple-pop.game .col-pimple:nth-child(9), .page--pimple-pop.game .col-pimple:nth-child(10),
-.page--pimple-pop.game .col-pimple:nth-child(16), .page--pimple-pop.game .col-pimple:nth-child(17), .page--pimple-pop.game .col-pimple:nth-child(18), .page--pimple-pop.game .col-pimple:nth-child(19), .page--pimple-pop.game .col-pimple:nth-child(20),
-.page--pimple-pop.game .col-pimple:nth-child(26), .page--pimple-pop.game .col-pimple:nth-child(27), .page--pimple-pop.game .col-pimple:nth-child(28), .page--pimple-pop.game .col-pimple:nth-child(29), .page--pimple-pop.game .col-pimple:nth-child(30) {
-  height: 56px; }
-.page--pimple-pop.game .game-arena {
-  padding-top: 30px;
-  position: relative;
-  min-height: 1696px;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/images/pimple-pop/floor@2x.png");
-  display: block; }
-.page--pimple-pop.game .game-arena__actor {
-  background-size: cover;
-  width: 1021px;
-  height: 1666px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/images/pimple-pop/woman@2x.png");
-  display: block;
-  background-size: cover;
-  margin: 0 auto;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
-  z-index: 1; }
-.page--pimple-pop.game .game-arena__grid {
-  width: 458px;
-  height: 600px;
-  *zoom: 1;
-  margin: 350px auto 0 auto; }
-  .page--pimple-pop.game .game-arena__grid:before, .page--pimple-pop.game .game-arena__grid:after {
-    content: " ";
-    display: table; }
-  .page--pimple-pop.game .game-arena__grid:after {
-    clear: both; }
-.page--pimple-pop.game .header {
-  padding: 43px 49px 18px 49px;
-  background-color: #B22655;
-  color: #FFFFFF;
-  height: 226px; }
-.page--pimple-pop.game .header__timer {
-  font: 40px/56px "OpenSans-Bold", sans-serif;
-  letter-spacing: 4.44px;
-  margin-top: 15px;
-  display: block; }
-.page--pimple-pop.game .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10001;
-  background-color: #6C4241;
-  background-color: rgba(0, 0, 0, 0.57);
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .page--pimple-pop.game .overlay .text {
-    font-size: 306px;
-    letter-spacing: 0;
-    line-height: 426px;
-    font-family: "OpenSans-Bold", sans-serif; }
-.page--pimple-pop.game .pimple-point {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: calc(50% - 30px);
-  color: #B22655;
-  font-family: "OpenSans-Bold", sans-serif;
-  font-size: 60px;
-  line-height: 83px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none; }
-.page--pimple-pop.game .pointfade-enter-active, .page--pimple-pop.game .pointfade-leave-active {
-  transition: all 1s; }
-.page--pimple-pop.game .pointfade-leave-to {
-  opacity: 0;
-  transform: translateY(-30px); }
-.page--pimple-pop.game .progress {
-  height: 34px;
-  background-color: #FFFFFF;
-  border-radius: 17px;
-  width: 100%; }
-.page--pimple-pop.game .progress-bar {
-  border-radius: 17px;
-  background-color: #F293B1; }
-.page--pimple-pop.game .progress-wrapper {
-  padding: 26px 42px;
-  height: 86px;
-  width: 100%;
-  background-color: #CC2C62;
-  border-radius: 42px; }
-.page--pimple-pop.game .score {
-  width: 340px;
-  height: 120px;
-  border-radius: 55px;
-  background-color: #B22655;
-  color: #FFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 0 auto;
-  position: relative;
-  flex-direction: column;
-  z-index: 4; }
-.page--pimple-pop.game .score__point {
-  font: 50px/50px "OpenSans-Bold", sans-serif;
-  letter-spacing: 0; }
-.page--pimple-pop.game .score__text {
-  font: 30px/30px "OpenSans-Bold", sans-serif;
-  letter-spacing: 3px;
-  margin-bottom: 11px; }
-.page--pimple-pop.game .wrapper {
-  display: flex;
-  width: 100%; }
+.page--pimple-pop.game .actor { display: block; background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0; transition: opacity .3s ease; }
+.page--pimple-pop.game .actor--small { opacity: 1; background-image: url("/assets/images/pimple-pop/actor-small@2x.png"); width: 64px; height: 65px; }
+.page--pimple-pop.game .actor--red { opacity: 1; background-image: url("/assets/images/pimple-pop/actor-red@2x.png"); width: 59px; height: 61px; }
+.page--pimple-pop.game .actor--scar { opacity: 1; background-image: url("/assets/images/pimple-pop/actor-scar@2x.png"); width: 72px; height: 75px; }
+.page--pimple-pop.game .actor--whitehead { opacity: 1; background-image: url("/assets/images/pimple-pop/actor-whitehead@2x.png"); width: 56px; height: 53px; }
+.page--pimple-pop.game .actor--mystery { opacity: 1; background-image: url("/assets/images/pimple-pop/actor-mystery@2x.png"); width: 58px; height: 59px; }
+.page--pimple-pop.game .close-button { margin-left: 15px; }
+.page--pimple-pop.game .col-pimple { min-height: 1px; width: 20%; float: left; height: 112px; position: relative; display: flex; align-items: center; justify-content: center; }
+.page--pimple-pop.game .col-pimple:nth-child(6), .page--pimple-pop.game .col-pimple:nth-child(7), .page--pimple-pop.game .col-pimple:nth-child(8), .page--pimple-pop.game .col-pimple:nth-child(9), .page--pimple-pop.game .col-pimple:nth-child(10), .page--pimple-pop.game .col-pimple:nth-child(16), .page--pimple-pop.game .col-pimple:nth-child(17), .page--pimple-pop.game .col-pimple:nth-child(18), .page--pimple-pop.game .col-pimple:nth-child(19), .page--pimple-pop.game .col-pimple:nth-child(20), .page--pimple-pop.game .col-pimple:nth-child(26), .page--pimple-pop.game .col-pimple:nth-child(27), .page--pimple-pop.game .col-pimple:nth-child(28), .page--pimple-pop.game .col-pimple:nth-child(29), .page--pimple-pop.game .col-pimple:nth-child(30) { height: 56px; }
+.page--pimple-pop.game .game-arena { padding-top: 30px; position: relative; min-height: 1696px; background-size: cover; width: 100%; height: auto; background-position: center; background-repeat: no-repeat; background-image: url("/assets/images/pimple-pop/floor@2x.png"); display: block; }
+.page--pimple-pop.game .game-arena__actor { background-size: cover; width: 1021px; height: 1666px; background-position: center; background-repeat: no-repeat; background-image: url("/assets/images/pimple-pop/woman@2x.png"); display: block; background-size: cover; margin: 0 auto; position: absolute; top: 30px; left: 0; right: 0; z-index: 1; }
+.page--pimple-pop.game .game-arena__grid { width: 458px; height: 600px; *zoom: 1; margin: 350px auto 0 auto; }
+.page--pimple-pop.game .game-arena__grid:before, .page--pimple-pop.game .game-arena__grid:after { content: " "; display: table; }
+.page--pimple-pop.game .game-arena__grid:after { clear: both; }
+.page--pimple-pop.game .header { padding: 43px 49px 18px 49px; background-color: #B22655; color: #FFFFFF; height: 226px; }
+.page--pimple-pop.game .header__timer { font: 40px/56px "OpenSans-Bold", sans-serif; letter-spacing: 4.44px; margin-top: 15px; display: block; }
+.page--pimple-pop.game .overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 10001; background-color: #6C4241; background-color: rgba(0, 0, 0, 0.57); color: #FFFFFF; display: flex; align-items: center; justify-content: center; }
+.page--pimple-pop.game .overlay .text { font-size: 306px; letter-spacing: 0; line-height: 426px; font-family: "OpenSans-Bold", sans-serif; }
+.page--pimple-pop.game .pimple-point { position: absolute; z-index: 1; top: 0; left: calc(50% - 30px); color: #B22655; font-family: "OpenSans-Bold", sans-serif; font-size: 60px; line-height: 83px; display: flex; align-items: center; justify-content: center; user-select: none; }
+.page--pimple-pop.game .pointfade-enter-active, .page--pimple-pop.game .pointfade-leave-active { transition: all 1s; }
+.page--pimple-pop.game .pointfade-leave-to { opacity: 0; transform: translateY(-30px); }
+.page--pimple-pop.game .progress { height: 34px; background-color: #FFFFFF; border-radius: 17px; width: 100%; }
+.page--pimple-pop.game .progress-bar { border-radius: 17px; background-color: #F293B1; }
+.page--pimple-pop.game .progress-wrapper { padding: 26px 42px; height: 86px; width: 100%; background-color: #CC2C62; border-radius: 42px; }
+.page--pimple-pop.game .score { width: 340px; height: 120px; border-radius: 55px; background-color: #B22655; color: #FFF; display: flex; align-items: center; justify-content: center; margin: 0 auto 0 auto; position: relative; flex-direction: column; z-index: 4; }
+.page--pimple-pop.game .score__point { font: 50px/50px "OpenSans-Bold", sans-serif; letter-spacing: 0; }
+.page--pimple-pop.game .score__text { font: 30px/30px "OpenSans-Bold", sans-serif; letter-spacing: 3px; margin-bottom: 11px; }
+.page--pimple-pop.game .wrapper { display: flex; width: 100%; }
 
-.page--pimple-pop.finish .box-congrats {
-  background-color: #F7A4A6;
-  height: calc(100vh - 835px);
-  padding-top: 263px; }
-.page--pimple-pop.finish .box-congrats__heading {
-  font: 70px/70px "OpenSans-Bold", sans-serif;
-  letter-spacing: 5.83px;
-  margin: 0 0 60px 0;
-  text-transform: uppercase;
-  color: #FFF; }
-.page--pimple-pop.finish .failed .box-congrats__heading {
-  font-size: 50px;
-  padding: 0 75px; }
-.page--pimple-pop.finish .box-congrats__text {
-  font: 38px/53px "OpenSans-Bold", sans-serif;
-  letter-spacing: 3.8px;
-  color: #000;
-  margin: 0 0 27px 0;
-  display: block; }
-.page--pimple-pop.finish .button-print-voucher {
-  width: 698px;
-  height: 93px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  border-radius: 6.4px;
-  text-transform: uppercase;
-  font: 32px/44px "OpenSans-Bold", sans-serif;
-  letter-spacing: 3.2px;
-  background-color: #000;
-  color: #FFF; }
-.page--pimple-pop.finish .coupon {
-  background-size: cover;
-  width: 510px;
-  height: 215px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/images/pimple-pop/coupon@2x.png");
-  display: block;
-  margin: 0 auto 81px auto;
-  padding: 43px 73px 43px 148px; }
-.page--pimple-pop.finish .coupon__text-reward {
-  font: 48px/67px "OpenSans-Bold", sans-serif;
-  letter-spacing: 2.5px;
-  color: #B22655;
-  text-align: left;
-  display: block; }
-.page--pimple-pop.finish .modal-printed .modal-content {
-  height: 1083px; }
-.page--pimple-pop.finish .modal-printed .modal-dismiss {
-  position: absolute;
-  top: 30px;
-  right: 60px;
-  z-index: 1; }
-.page--pimple-pop.finish .modal-printed .greeting {
-  font: 32px/50px "OpenSans-Regular", sans-serif;
-  margin: 0 0 50px 0; }
-.page--pimple-pop.finish .modal-printed .btn-back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 698px;
-  height: 93px;
-  border-radius: 6px;
-  font: 32px/44px "OpenSans-Bold", sans-serif;
-  letter-spacing: 3.2px;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff; }
-.page--pimple-pop.finish .modal-printed .heading {
-  font: 40px/56px "OpenSans-Bold", sans-serif;
-  letter-spacing: 2.5px;
-  color: #B22655;
-  margin: 54px 0 32px 0; }
-.page--pimple-pop.finish .modal-voucher .modal-content {
-  height: 880px;
-  padding: 0 60px; }
-.page--pimple-pop.finish .modal-voucher .modal-dismiss {
-  position: absolute;
-  top: 30px;
-  right: 60px;
-  z-index: 1; }
-.page--pimple-pop.finish .modal-voucher #barcode {
-  margin-bottom: 30px; }
-.page--pimple-pop.finish .modal-voucher .copywriting {
-  font: 32px/36px "OpenSans-Regular", sans-serif;
-  margin: 0 0 20px 0;
-  color: #000; }
-.page--pimple-pop.finish .modal-voucher .btn-back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 698px;
-  height: 93px;
-  border-radius: 6px;
-  font: 32px/44px "OpenSans-Bold", sans-serif;
-  letter-spacing: 3.2px;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff; }
-.page--pimple-pop.finish .modal-voucher .fullname {
-  font: 35px/40px "OpenSans-Regular", sans-serif;
-  margin: 30px 0 20px 0; }
-  .page--pimple-pop.finish .modal-voucher .fullname.bolder {
-    font-family: "OpenSans-Bold", sans-serif; }
-.page--pimple-pop.finish .modal-voucher .greeting {
-  font: 30px/40px "OpenSans-Regular", sans-serif;
-  margin: 0 0 20px 0; }
-.page--pimple-pop.finish .modal-voucher .heading {
-  font: 40px/56px "OpenSans-Bold", sans-serif;
-  letter-spacing: 2.5px;
-  color: #B22655;
-  margin: 54px 0 32px 0; }
-.page--pimple-pop.finish .modal-voucher .minimum {
-  font: 26px/36px "OpenSans-Regular", sans-serif;
-  margin: 0 0 20px 0;
-  color: #000; }
-.page--pimple-pop.finish .modal-voucher .reward {
-  font: 40px/56px "OpenSans-Bold", sans-serif;
-  margin: 0; }
-.page--pimple-pop.finish .modal-header, .page--pimple-pop.finish .modal-footer {
-  padding: 0; }
-.page--pimple-pop.finish .modal-dialog {
-  margin-top: 120px;
-  width: auto;
-  height: auto; }
-.page--pimple-pop.finish .modal-content {
-  margin: 0 auto;
-  width: 792px;
-  height: 892px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 16px;
-  box-shadow: none; }
-.page--pimple-pop.finish .print-voucher .copywriting {
-  font: 32px/50px "OpenSans-Regular", sans-serif;
-  margin: 70px 0 0 0; }
-.page--pimple-pop.finish .total-point {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: -200px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 4;
-  margin: 0 auto;
-  flex-direction: column;
-  background-size: cover;
-  width: 398px;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/images/pimple-pop/circle-total-score.png");
-  display: block; }
-.page--pimple-pop.finish .total-point__heading {
-  font: 40px/40px "OpenSans-Bold", sans-serif;
-  letter-spacing: 0;
-  color: #000000;
-  margin: 0 0 20px 0;
-  display: block; }
-.page--pimple-pop.finish .total-point__number {
-  font: 90px/90px "OpenSans-Bold", sans-serif;
-  letter-spacing: 0;
-  margin: 0 0 24px 0;
-  color: #B22655; }
-.page--pimple-pop.finish .total-point__text {
-  font: 40px/40px "OpenSans-Bold", sans-serif;
-  letter-spacing: 0;
-  color: #000000; }
-.page--pimple-pop.finish .woman-clean {
-  position: relative;
-  background-size: cover;
-  width: 100%;
-  height: 835px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/assets/images/pimple-pop/woman-clean@2x.png");
-  display: block; }
+.page--pimple-pop.finish .box-congrats { background-color: #F7A4A6; height: calc(100vh - 835px); padding-top: 263px; }
+.page--pimple-pop.finish .box-congrats__heading { font: 70px/70px "OpenSans-Bold", sans-serif; letter-spacing: 5.83px; margin: 0 0 60px 0; text-transform: uppercase; color: #FFF; }
+.page--pimple-pop.finish .failed .box-congrats__heading { font-size: 50px; padding: 0 75px; }
+.page--pimple-pop.finish .box-congrats__text { font: 38px/53px "OpenSans-Bold", sans-serif; letter-spacing: 3.8px; color: #000; margin: 0 0 27px 0; display: block; }
+.page--pimple-pop.finish .button-print-voucher { width: 698px; height: 93px; display: flex; align-items: center; justify-content: center; margin: 0 auto; border-radius: 6.4px; text-transform: uppercase; font: 32px/44px "OpenSans-Bold", sans-serif; letter-spacing: 3.2px; background-color: #000; color: #FFF; }
+.page--pimple-pop.finish .coupon { background-size: cover; width: 510px; height: 215px; background-position: center; background-repeat: no-repeat; background-image: url("/assets/images/pimple-pop/coupon@2x.png"); display: block; margin: 0 auto 81px auto; padding: 43px 73px 43px 148px; }
+.page--pimple-pop.finish .coupon__text-reward { font: 48px/67px "OpenSans-Bold", sans-serif; letter-spacing: 2.5px; color: #B22655; text-align: left; display: block; }
+.page--pimple-pop.finish .modal-printed .modal-content { height: 1083px; }
+.page--pimple-pop.finish .modal-printed .modal-dismiss { position: absolute; top: 30px; right: 60px; z-index: 1; }
+.page--pimple-pop.finish .modal-printed .greeting { font: 32px/50px "OpenSans-Regular", sans-serif; margin: 0 0 50px 0; }
+.page--pimple-pop.finish .modal-printed .btn-back { display: flex; align-items: center; justify-content: center; width: 698px; height: 93px; border-radius: 6px; font: 32px/44px "OpenSans-Bold", sans-serif; letter-spacing: 3.2px; text-transform: uppercase; background-color: #000; color: #fff; }
+.page--pimple-pop.finish .modal-printed .heading { font: 40px/56px "OpenSans-Bold", sans-serif; letter-spacing: 2.5px; color: #B22655; margin: 54px 0 32px 0; }
+.page--pimple-pop.finish .modal-voucher .modal-content { height: 880px; padding: 0 60px; }
+.page--pimple-pop.finish .modal-voucher .modal-dismiss { position: absolute; top: 30px; right: 60px; z-index: 1; }
+.page--pimple-pop.finish .modal-voucher #barcode { margin-bottom: 30px; }
+.page--pimple-pop.finish .modal-voucher .copywriting { font: 32px/36px "OpenSans-Regular", sans-serif; margin: 0 0 20px 0; color: #000; }
+.page--pimple-pop.finish .modal-voucher .btn-back { display: flex; align-items: center; justify-content: center; width: 698px; height: 93px; border-radius: 6px; font: 32px/44px "OpenSans-Bold", sans-serif; letter-spacing: 3.2px; text-transform: uppercase; background-color: #000; color: #fff; }
+.page--pimple-pop.finish .modal-voucher .fullname { font: 35px/40px "OpenSans-Regular", sans-serif; margin: 30px 0 20px 0; }
+.page--pimple-pop.finish .modal-voucher .fullname.bolder { font-family: "OpenSans-Bold", sans-serif; }
+.page--pimple-pop.finish .modal-voucher .greeting { font: 30px/40px "OpenSans-Regular", sans-serif; margin: 0 0 20px 0; }
+.page--pimple-pop.finish .modal-voucher .heading { font: 40px/56px "OpenSans-Bold", sans-serif; letter-spacing: 2.5px; color: #B22655; margin: 54px 0 32px 0; }
+.page--pimple-pop.finish .modal-voucher .minimum { font: 26px/36px "OpenSans-Regular", sans-serif; margin: 0 0 20px 0; color: #000; }
+.page--pimple-pop.finish .modal-voucher .reward { font: 40px/56px "OpenSans-Bold", sans-serif; margin: 0; }
+.page--pimple-pop.finish .modal-header, .page--pimple-pop.finish .modal-footer { padding: 0; }
+.page--pimple-pop.finish .modal-dialog { margin-top: 120px; width: auto; height: auto; }
+.page--pimple-pop.finish .modal-content { margin: 0 auto; width: 792px; height: 892px; display: flex; align-items: center; justify-content: center; flex-direction: column; border-radius: 16px; box-shadow: none; }
+.page--pimple-pop.finish .print-voucher .copywriting { font: 32px/50px "OpenSans-Regular", sans-serif; margin: 70px 0 0 0; }
+.page--pimple-pop.finish .total-point { display: flex; justify-content: center; align-items: center; position: absolute; bottom: -200px; left: 0; right: 0; text-align: center; z-index: 4; margin: 0 auto; flex-direction: column; background-size: cover; width: 398px; height: 400px; background-position: center; background-repeat: no-repeat; background-image: url("/assets/images/pimple-pop/circle-total-score.png"); display: block; }
+.page--pimple-pop.finish .total-point__heading { font: 40px/40px "OpenSans-Bold", sans-serif; letter-spacing: 0; color: #000000; margin: 0 0 20px 0; display: block; }
+.page--pimple-pop.finish .total-point__number { font: 90px/90px "OpenSans-Bold", sans-serif; letter-spacing: 0; margin: 0 0 24px 0; color: #B22655; }
+.page--pimple-pop.finish .total-point__text { font: 40px/40px "OpenSans-Bold", sans-serif; letter-spacing: 0; color: #000000; }
+.page--pimple-pop.finish .woman-clean { position: relative; background-size: cover; width: 100%; height: 835px; background-position: center; background-repeat: no-repeat; background-image: url("/assets/images/pimple-pop/woman-clean@2x.png"); display: block; }
