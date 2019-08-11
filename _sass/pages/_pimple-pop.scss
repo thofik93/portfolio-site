@@ -1,25 +1,23 @@
-.progress {
-	overflow: hidden;
-	background-color: #D8D8D8;
-	border-radius: 9px;
-	height: 18px;
-	width: 100%;
-	margin-bottom: 0;
-}
-
-.progress-bar {
-	float: left;
-	height: 100%;
-	background-color: #F384A7;
-	transition: width .6s ease;
-	border-radius: 9px;
-}
-
-
 .page--pimple-pop {
 	min-height: 1920px;
 	text-align: center;
+	.progress {
+		overflow: hidden;
+		background-color: #D8D8D8;
+		border-radius: 9px;
+		height: 18px;
+		width: 100%;
+		margin-bottom: 0;
+	}
 
+	.progress-bar {
+		float: left;
+		height: 100%;
+		background-color: #F384A7;
+		transition: width .6s ease;
+		border-radius: 9px;
+	}
+	
 	.wrapper {
 		margin-top: 0;
 	}

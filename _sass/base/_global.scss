@@ -10,3 +10,17 @@
 	margin-top: 80px;
 }
 
+@media (max-width: 991px) {
+	.sidebar {
+		width: 100%;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	.wrapper {
+		margin-top: 0;
+	}
+}
+

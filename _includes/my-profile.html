@@ -4,7 +4,7 @@
     {% for item in site.data.navigation %}
     <li class="my-profile__navigation__link {% if (item.link == page.url) %}active{% endif %}">
       <i class="{{ item.icon }} my-profile__navigation__icon"></i>
-      <a href="{{ item.link }}">{{ item.name }}</a>
+      <a href="{{ item.link  | relative_url}}">{{ item.name }}</a>
     </li>
     {% endfor %}
   </ul>

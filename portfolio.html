@@ -44,8 +44,8 @@ permalink: "/portfolio"
 
 			<div class="row">
 				{% for portfolio in site.data.list_portfolio %}
-					<div class="desktop-3 column">
-						<a href="{{ portfolio.link }}" class="portfolio-card" style="background-image: url('{{ portfolio.background_image }}')">
+					<div class="desktop-3 mobile-12 column">
+						<a href="{{ portfolio.link }}" class="portfolio-card" style="background-image: url('{{ portfolio.background_image | relative_url }}')">
 							<div class="portfolio-card__content">
 								<h4 class="portfolio-card__project-name">{{ portfolio.project_name }}</h4>
 								<div class="zigzag medium clearfix " data-svg-drawing="yes">
@@ -76,7 +76,7 @@ permalink: "/portfolio"
 		</div>
 
 		<div class="body">
-			<a href="" class="btn-download-cv"><i class="icon-download-cloud"></i> DOWNLOAD MY CV</a>
+			<a href="{{ '/assets/cv.docx' | relative_url }}" target="_blank" class="btn-download-cv"><i class="icon-download-cloud"></i> DOWNLOAD MY CV</a>
 		</div>
 	</div>
 </div>

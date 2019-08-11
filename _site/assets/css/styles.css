@@ -54,6 +54,8 @@ a { text-decoration: none; color: inherit; }
 
 .container { padding-left: 15px; padding-right: 15px; margin-left: auto; margin-right: auto; }
 
+@media (min-width: 601px) { .container { width: 600px; } }
+@media (min-width: 992px) { .container { width: 970px; } }
 @media (min-width: 1200px) { .container { width: 1170px; } }
 .img-responsive { display: block; max-width: 100%; height: auto; }
 
@@ -63,6 +65,9 @@ a { text-decoration: none; color: inherit; }
 
 .wrapper { margin-top: 80px; }
 
+@media (max-width: 991px) { .sidebar { width: 100%; }
+  .content { width: 100%; }
+  .wrapper { margin-top: 0; } }
 .row { margin-left: -15px; margin-right: -15px; }
 .row:before, .row:after { content: " "; display: table; zoom: 1; }
 .row:after { clear: both; }
@@ -182,11 +187,9 @@ a { text-decoration: none; color: inherit; }
 .page--portfolio .portfolio-card__project-name { font-size: 13px; font-family: "OpenSans-Bold", sans-serif; line-height: 22px; }
 .page--portfolio .zigzag { margin: 0 auto; padding-top: 2px; position: relative; }
 
-.progress { overflow: hidden; background-color: #D8D8D8; border-radius: 9px; height: 18px; width: 100%; margin-bottom: 0; }
-
-.progress-bar { float: left; height: 100%; background-color: #F384A7; transition: width .6s ease; border-radius: 9px; }
-
 .page--pimple-pop { min-height: 1920px; text-align: center; }
+.page--pimple-pop .progress { overflow: hidden; background-color: #D8D8D8; border-radius: 9px; height: 18px; width: 100%; margin-bottom: 0; }
+.page--pimple-pop .progress-bar { float: left; height: 100%; background-color: #F384A7; transition: width .6s ease; border-radius: 9px; }
 .page--pimple-pop .wrapper { margin-top: 0; }
 .page--pimple-pop .container-pimple { width: 861px; margin: 0 auto; }
 .page--pimple-pop.finish { position: relative; }
