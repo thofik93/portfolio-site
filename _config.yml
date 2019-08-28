@@ -18,6 +18,10 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/global/thofik-wiranata.png
 plugins:
   - jekyll-feed
   - jekyll-sitemap

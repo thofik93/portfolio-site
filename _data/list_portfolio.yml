@@ -44,7 +44,7 @@
   background_image: /assets/images/portfolio/plugin.png
 - project_name: PIMPLE POP
   category: game
-  link: /pimple-pop
+  link: https://thofik93.github.io/portfolio-site/pimple-pop
   background_image: /assets/images/portfolio/pimple-pop.png
 - project_name: OBSTACLE RUN
   category: game
